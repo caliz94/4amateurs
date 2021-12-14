@@ -87,7 +87,6 @@
             this.panel_der.Name = "panel_der";
             this.panel_der.Size = new System.Drawing.Size(10, 700);
             this.panel_der.TabIndex = 3;
-            this.panel_der.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_der_Paint);
             // 
             // panel_sup
             // 
@@ -276,6 +275,7 @@
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MenuPrincipal_FormClosed);
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

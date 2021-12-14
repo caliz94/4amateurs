@@ -16,5 +16,23 @@ namespace PRESENTACION
         {
             InitializeComponent();
         }
+
+        private void eSTADISTICASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Integrantes abrirform = Integrantes.Abrir;
+            abrirform.TopLevel = false;
+            this.pnl_cont.Controls.Add(abrirform);
+            this.pnl_cont.Tag = abrirform;
+            abrirform.Show();
+        }
+
+        private void eSTADISTICASDECLANToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal abrirform = MenuPrincipal.Abrir;
+            abrirform.TopLevel = false;
+            this.pnl_cont.Controls.Add(abrirform);
+            this.pnl_cont.Tag = abrirform;
+            abrirform.Show();
+        }
     }
 }

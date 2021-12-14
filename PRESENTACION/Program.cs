@@ -16,7 +16,7 @@ namespace PRESENTACION
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Integrantes());
+            Application.Run(new CP_CONTENEDOR());
         }
     }
 }

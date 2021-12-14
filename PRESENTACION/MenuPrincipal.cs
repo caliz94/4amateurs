@@ -87,15 +87,20 @@ namespace PRESENTACION
             mejores_5_mes();
             placas_anuales();
         }
-
-        private void panel_der_Paint(object sender, PaintEventArgs e)
+        private static MenuPrincipal _Abrir;
+        public static MenuPrincipal Abrir
         {
-
+            get
+            {
+                if (_Abrir == null)
+                    _Abrir = new MenuPrincipal();
+                return _Abrir;
+            }
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
+        private void MenuPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            _Abrir = null;
         }
     }
 }

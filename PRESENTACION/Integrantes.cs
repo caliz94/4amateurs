@@ -122,7 +122,24 @@ namespace PRESENTACION
         }
 
 
+        #region IMPLEMENTACIÓN SINGLENTON
+        private static Integrantes _Abrir;
+        public static Integrantes Abrir
+        {
+            get
+            {
+                if (_Abrir == null)
+                    _Abrir = new Integrantes();
+                return _Abrir;
+            }
+        }
 
+        private void Integrantes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _Abrir = null;
+        }
+
+        #endregion
 
     }
 }

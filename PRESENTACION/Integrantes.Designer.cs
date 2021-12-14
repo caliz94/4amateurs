@@ -279,6 +279,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Integrantes";
             this.Text = "Integrantes";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Integrantes_FormClosed);
             this.Load += new System.EventHandler(this.Integrantes_Load);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_integrantes)).EndInit();
