@@ -39,12 +39,12 @@
             this.gANADORESToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.rEGISTRODEPLACASToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
+            this.estadisticasToolStripMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.pnl_izq = new System.Windows.Forms.Panel();
             this.pnl_cont = new System.Windows.Forms.Panel();
             this.pnl_inf = new System.Windows.Forms.Panel();
             this.pnl_sup = new System.Windows.Forms.Panel();
             this.pnl_der = new System.Windows.Forms.Panel();
-            this.estadisticasToolStripMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnl_izq.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +62,7 @@
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(12, 18);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(254, 205);
+            this.menuStrip1.Size = new System.Drawing.Size(254, 218);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -71,7 +71,7 @@
             this.iNTEGRANTESDECLANToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eSTADISTICASToolStripMenuItem,
             this.aDMINISTRARToolStripMenuItem});
-            this.iNTEGRANTESDECLANToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.NotEqual;
+            this.iNTEGRANTESDECLANToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.Asymmetrik;
             this.iNTEGRANTESDECLANToolStripMenuItem.IconColor = System.Drawing.Color.Black;
             this.iNTEGRANTESDECLANToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iNTEGRANTESDECLANToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -119,7 +119,7 @@
             this.pARTICIPACIONESDESALASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pARTICIPANTESToolStripMenuItem,
             this.gANADORESToolStripMenuItem});
-            this.pARTICIPACIONESDESALASToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.NotEqual;
+            this.pARTICIPACIONESDESALASToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.Asymmetrik;
             this.pARTICIPACIONESDESALASToolStripMenuItem.IconColor = System.Drawing.Color.Black;
             this.pARTICIPACIONESDESALASToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.pARTICIPACIONESDESALASToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -155,13 +155,24 @@
             // 
             // rEGISTRODEPLACASToolStripMenuItem
             // 
-            this.rEGISTRODEPLACASToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.NotEqual;
+            this.rEGISTRODEPLACASToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.Asymmetrik;
             this.rEGISTRODEPLACASToolStripMenuItem.IconColor = System.Drawing.Color.Black;
             this.rEGISTRODEPLACASToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.rEGISTRODEPLACASToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.rEGISTRODEPLACASToolStripMenuItem.Name = "rEGISTRODEPLACASToolStripMenuItem";
             this.rEGISTRODEPLACASToolStripMenuItem.Size = new System.Drawing.Size(247, 52);
             this.rEGISTRODEPLACASToolStripMenuItem.Text = "REGISTRO DE PLACAS";
+            // 
+            // estadisticasToolStripMenuItem1
+            // 
+            this.estadisticasToolStripMenuItem1.IconChar = FontAwesome.Sharp.IconChar.Asymmetrik;
+            this.estadisticasToolStripMenuItem1.IconColor = System.Drawing.Color.Black;
+            this.estadisticasToolStripMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.estadisticasToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.estadisticasToolStripMenuItem1.Name = "estadisticasToolStripMenuItem1";
+            this.estadisticasToolStripMenuItem1.Size = new System.Drawing.Size(247, 52);
+            this.estadisticasToolStripMenuItem1.Text = "estadisticas de clan";
+            this.estadisticasToolStripMenuItem1.Click += new System.EventHandler(this.estadisticasToolStripMenuItem1_Click);
             // 
             // pnl_izq
             // 
@@ -177,7 +188,7 @@
             this.pnl_cont.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_cont.Location = new System.Drawing.Point(274, 25);
             this.pnl_cont.Name = "pnl_cont";
-            this.pnl_cont.Size = new System.Drawing.Size(294, 344);
+            this.pnl_cont.Size = new System.Drawing.Size(460, 344);
             this.pnl_cont.TabIndex = 2;
             // 
             // pnl_inf
@@ -185,7 +196,7 @@
             this.pnl_inf.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnl_inf.Location = new System.Drawing.Point(0, 369);
             this.pnl_inf.Name = "pnl_inf";
-            this.pnl_inf.Size = new System.Drawing.Size(593, 23);
+            this.pnl_inf.Size = new System.Drawing.Size(759, 23);
             this.pnl_inf.TabIndex = 3;
             // 
             // pnl_sup
@@ -193,32 +204,23 @@
             this.pnl_sup.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_sup.Location = new System.Drawing.Point(0, 0);
             this.pnl_sup.Name = "pnl_sup";
-            this.pnl_sup.Size = new System.Drawing.Size(593, 25);
+            this.pnl_sup.Size = new System.Drawing.Size(759, 25);
             this.pnl_sup.TabIndex = 4;
             // 
             // pnl_der
             // 
             this.pnl_der.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_der.Location = new System.Drawing.Point(568, 25);
+            this.pnl_der.Location = new System.Drawing.Point(734, 25);
             this.pnl_der.Name = "pnl_der";
             this.pnl_der.Size = new System.Drawing.Size(25, 344);
             this.pnl_der.TabIndex = 5;
-            // 
-            // estadisticasToolStripMenuItem1
-            // 
-            this.estadisticasToolStripMenuItem1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.estadisticasToolStripMenuItem1.IconColor = System.Drawing.Color.Black;
-            this.estadisticasToolStripMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.estadisticasToolStripMenuItem1.Name = "estadisticasToolStripMenuItem1";
-            this.estadisticasToolStripMenuItem1.Size = new System.Drawing.Size(247, 20);
-            this.estadisticasToolStripMenuItem1.Text = "estadisticas de clan";
-            this.estadisticasToolStripMenuItem1.Click += new System.EventHandler(this.estadisticasToolStripMenuItem1_Click);
             // 
             // CP_CONTENEDOR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 392);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(759, 392);
             this.Controls.Add(this.pnl_cont);
             this.Controls.Add(this.pnl_der);
             this.Controls.Add(this.pnl_izq);
@@ -228,6 +230,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "CP_CONTENEDOR";
             this.Text = "CP_CONTENEDOR";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.pnl_izq.ResumeLayout(false);

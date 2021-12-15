@@ -42,6 +42,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btn_ingresar = new System.Windows.Forms.Button();
             this.activo = new System.Windows.Forms.RadioButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // txt_usuario
@@ -164,11 +165,31 @@
             this.activo.Text = "Activo";
             this.activo.UseVisualStyleBackColor = true;
             // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
+            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Flames", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.iconButton1.IconColor = System.Drawing.Color.Green;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 35;
+            this.iconButton1.Location = new System.Drawing.Point(106, 195);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(92, 51);
+            this.iconButton1.TabIndex = 19;
+            this.iconButton1.Text = "AGREGAR";
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
             // REGIST_USU_AMATEURS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(235, 258);
+            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.activo);
             this.Controls.Add(this.btn_ingresar);
             this.Controls.Add(this.label6);
@@ -206,5 +227,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_ingresar;
         private System.Windows.Forms.RadioButton activo;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

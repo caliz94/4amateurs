@@ -19,22 +19,16 @@ namespace PRESENTACION
         {
             InitializeComponent();
         }
-
-
         cn_MostrarIntegrantes mostarIntegrantes_cn = new cn_MostrarIntegrantes();
-
         private void mostrarIntegrantes()
         {
             cn_MostrarIntegrantes objeto = new cn_MostrarIntegrantes();
             dgv_integrantes.DataSource = objeto.mostar_integ();
         }
-
         private void Integrantes_Load(object sender, EventArgs e)
         {
             mostrarIntegrantes();
         }
-
-
         //graficas
         //CADENA CON EL SERVIDOR DE BASE DE DATOS
         private SqlConnection Conexion = new SqlConnection("Server=.;database=AMATEURS;INTEGRATED SECURITY=TRUE");
@@ -90,25 +84,19 @@ namespace PRESENTACION
 
         private void dgv_integrantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_idUsuario.Text = dgv_integrantes.CurrentRow.Cells["ID_INTEGRANTE"].Value.ToString();
-            
-
+            txt_idUsuario.Text = dgv_integrantes.CurrentRow.Cells["ID_INTEGRANTE"].Value.ToString();          
         }
 
         private void txt_idUsuario_TextChanged(object sender, EventArgs e)
         {
             GrafCategorias();
-            Grafañointegrant();
-            
+            Grafañointegrant();      
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Application.Restart();
-            
+            Application.Restart();         
         }
-
-
         #region IMPLEMENTACIÓN SINGLENTON
         private static Integrantes _Abrir;
         public static Integrantes Abrir
@@ -120,13 +108,15 @@ namespace PRESENTACION
                 return _Abrir;
             }
         }
-
         private void Integrantes_FormClosed(object sender, FormClosedEventArgs e)
         {
             _Abrir = null;
         }
-
         #endregion
 
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
