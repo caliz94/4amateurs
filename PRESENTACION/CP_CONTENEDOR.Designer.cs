@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnl_izq = new System.Windows.Forms.Panel();
-            this.pnl_cont = new System.Windows.Forms.Panel();
             this.iNTEGRANTESDECLANToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.eSTADISTICASToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.aDMINISTRARToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
@@ -40,11 +37,14 @@
             this.pARTICIPACIONESDESALASToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.pARTICIPANTESToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.gANADORESToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.rEGISTRODEPLACASToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
+            this.pnl_izq = new System.Windows.Forms.Panel();
+            this.pnl_cont = new System.Windows.Forms.Panel();
             this.pnl_inf = new System.Windows.Forms.Panel();
             this.pnl_sup = new System.Windows.Forms.Panel();
             this.pnl_der = new System.Windows.Forms.Panel();
-            this.eSTADISTICASDECLANToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
+            this.estadisticasToolStripMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnl_izq.SuspendLayout();
             this.SuspendLayout();
@@ -54,41 +54,17 @@
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Font = new System.Drawing.Font("Insomnia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.eSTADISTICASDECLANToolStripMenuItem,
             this.iNTEGRANTESDECLANToolStripMenuItem,
             this.pARTICIPACIONESDESALASToolStripMenuItem,
             this.toolStripMenuItem1,
-            this.rEGISTRODEPLACASToolStripMenuItem});
+            this.rEGISTRODEPLACASToolStripMenuItem,
+            this.estadisticasToolStripMenuItem1});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(12, 18);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(254, 237);
+            this.menuStrip1.Size = new System.Drawing.Size(254, 205);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.AutoToolTip = true;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(247, 4);
-            this.toolStripMenuItem1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical90;
-            // 
-            // pnl_izq
-            // 
-            this.pnl_izq.Controls.Add(this.menuStrip1);
-            this.pnl_izq.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_izq.Location = new System.Drawing.Point(0, 25);
-            this.pnl_izq.Name = "pnl_izq";
-            this.pnl_izq.Size = new System.Drawing.Size(274, 344);
-            this.pnl_izq.TabIndex = 1;
-            // 
-            // pnl_cont
-            // 
-            this.pnl_cont.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_cont.Location = new System.Drawing.Point(274, 25);
-            this.pnl_cont.Name = "pnl_cont";
-            this.pnl_cont.Size = new System.Drawing.Size(294, 344);
-            this.pnl_cont.TabIndex = 2;
             // 
             // iNTEGRANTESDECLANToolStripMenuItem
             // 
@@ -150,6 +126,7 @@
             this.pARTICIPACIONESDESALASToolStripMenuItem.Name = "pARTICIPACIONESDESALASToolStripMenuItem";
             this.pARTICIPACIONESDESALASToolStripMenuItem.Size = new System.Drawing.Size(247, 52);
             this.pARTICIPACIONESDESALASToolStripMenuItem.Text = "PARTICIPACION DE SALAS";
+            this.pARTICIPACIONESDESALASToolStripMenuItem.Click += new System.EventHandler(this.pARTICIPACIONESDESALASToolStripMenuItem_Click);
             // 
             // pARTICIPANTESToolStripMenuItem
             // 
@@ -169,6 +146,13 @@
             this.gANADORESToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.gANADORESToolStripMenuItem.Text = "GANADORES";
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.AutoToolTip = true;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(247, 4);
+            this.toolStripMenuItem1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical90;
+            // 
             // rEGISTRODEPLACASToolStripMenuItem
             // 
             this.rEGISTRODEPLACASToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.NotEqual;
@@ -178,6 +162,23 @@
             this.rEGISTRODEPLACASToolStripMenuItem.Name = "rEGISTRODEPLACASToolStripMenuItem";
             this.rEGISTRODEPLACASToolStripMenuItem.Size = new System.Drawing.Size(247, 52);
             this.rEGISTRODEPLACASToolStripMenuItem.Text = "REGISTRO DE PLACAS";
+            // 
+            // pnl_izq
+            // 
+            this.pnl_izq.Controls.Add(this.menuStrip1);
+            this.pnl_izq.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnl_izq.Location = new System.Drawing.Point(0, 25);
+            this.pnl_izq.Name = "pnl_izq";
+            this.pnl_izq.Size = new System.Drawing.Size(274, 344);
+            this.pnl_izq.TabIndex = 1;
+            // 
+            // pnl_cont
+            // 
+            this.pnl_cont.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_cont.Location = new System.Drawing.Point(274, 25);
+            this.pnl_cont.Name = "pnl_cont";
+            this.pnl_cont.Size = new System.Drawing.Size(294, 344);
+            this.pnl_cont.TabIndex = 2;
             // 
             // pnl_inf
             // 
@@ -203,17 +204,15 @@
             this.pnl_der.Size = new System.Drawing.Size(25, 344);
             this.pnl_der.TabIndex = 5;
             // 
-            // eSTADISTICASDECLANToolStripMenuItem
+            // estadisticasToolStripMenuItem1
             // 
-            this.eSTADISTICASDECLANToolStripMenuItem.Enabled = false;
-            this.eSTADISTICASDECLANToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.NotEqual;
-            this.eSTADISTICASDECLANToolStripMenuItem.IconColor = System.Drawing.Color.Black;
-            this.eSTADISTICASDECLANToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.eSTADISTICASDECLANToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.eSTADISTICASDECLANToolStripMenuItem.Name = "eSTADISTICASDECLANToolStripMenuItem";
-            this.eSTADISTICASDECLANToolStripMenuItem.Size = new System.Drawing.Size(247, 52);
-            this.eSTADISTICASDECLANToolStripMenuItem.Text = "ESTADISTICAS DE CLAN";
-            this.eSTADISTICASDECLANToolStripMenuItem.Click += new System.EventHandler(this.eSTADISTICASDECLANToolStripMenuItem_Click);
+            this.estadisticasToolStripMenuItem1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.estadisticasToolStripMenuItem1.IconColor = System.Drawing.Color.Black;
+            this.estadisticasToolStripMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.estadisticasToolStripMenuItem1.Name = "estadisticasToolStripMenuItem1";
+            this.estadisticasToolStripMenuItem1.Size = new System.Drawing.Size(247, 20);
+            this.estadisticasToolStripMenuItem1.Text = "estadisticas de clan";
+            this.estadisticasToolStripMenuItem1.Click += new System.EventHandler(this.estadisticasToolStripMenuItem1_Click);
             // 
             // CP_CONTENEDOR
             // 
@@ -225,6 +224,7 @@
             this.Controls.Add(this.pnl_izq);
             this.Controls.Add(this.pnl_inf);
             this.Controls.Add(this.pnl_sup);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "CP_CONTENEDOR";
             this.Text = "CP_CONTENEDOR";
@@ -254,6 +254,6 @@
         private System.Windows.Forms.Panel pnl_inf;
         private System.Windows.Forms.Panel pnl_sup;
         private System.Windows.Forms.Panel pnl_der;
-        private FontAwesome.Sharp.IconMenuItem eSTADISTICASDECLANToolStripMenuItem;
+        private FontAwesome.Sharp.IconMenuItem estadisticasToolStripMenuItem1;
     }
 }

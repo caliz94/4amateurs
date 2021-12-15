@@ -93,7 +93,7 @@ alter proc grafi_mes_inte
 )
 as
 select R_PLACAS, p.id_semana from PLACAS as p
-inner join fecha as f on p.id_mes = f.id_mes where p.ID_INTEGRANTE = @id_integrante and f.id_mes = month(getdate()) 
+inner join fecha as f on p.id_mes = f.id_mes where p.ID_INTEGRANTE = @id_integrante and f.id_mes = month(getdate()) order by f.id_mes desc
 go
 
 create proc grafi_año_inte

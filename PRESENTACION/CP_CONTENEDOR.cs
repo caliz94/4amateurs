@@ -28,6 +28,16 @@ namespace PRESENTACION
 
         private void eSTADISTICASDECLANToolStripMenuItem_Click(object sender, EventArgs e)
         {
+        }
+
+        private void pARTICIPACIONESDESALASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+           
+        }
+
+        private void estadisticasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
             MenuPrincipal abrirform = MenuPrincipal.Abrir;
             abrirform.TopLevel = false;
             this.pnl_cont.Controls.Add(abrirform);

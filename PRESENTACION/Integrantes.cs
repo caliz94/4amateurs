@@ -47,6 +47,8 @@ namespace PRESENTACION
         ArrayList mes = new ArrayList();
         private void Grafañointegrant()
         {
+            total.Clear();
+            mes.Clear();
             cmd = new SqlCommand("grafi_año_inte", Conexion);
             cmd.Parameters.AddWithValue("@id_integrante", txt_idUsuario.Text);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -67,7 +69,9 @@ namespace PRESENTACION
         ArrayList Categoria = new ArrayList();
         ArrayList CantProd = new ArrayList();
         private void GrafCategorias()
-        {                      
+        {
+            Categoria.Clear();
+            CantProd.Clear();
                 cmd = new SqlCommand("grafi_mes_inte", Conexion);
                 cmd.Parameters.AddWithValue("@id_integrante", txt_idUsuario.Text);
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -82,23 +86,6 @@ namespace PRESENTACION
               
                 dr.Close();
                 Conexion.Close();                
-        }
-
-        void crear()
-        {
-            //To clear all the points in the series:
-
-            //chart1.Series[0].Points.Clear();
-            //To remove the first point in the series:
-
-            //chart2.Series[0].Points.RemoveAt(0);
-            //To clear all the points in all series:
-
-            foreach (var series in chart2.Series)
-            {
-                series.Points.Clear();
-            }
-
         }
 
         private void dgv_integrantes_CellContentClick(object sender, DataGridViewCellEventArgs e)

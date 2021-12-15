@@ -30,16 +30,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.panel_izq = new System.Windows.Forms.Panel();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel_inf = new System.Windows.Forms.Panel();
             this.panel_der = new System.Windows.Forms.Panel();
             this.panel_sup = new System.Windows.Forms.Panel();
@@ -62,14 +61,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel_izq
-            // 
-            this.panel_izq.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_izq.Location = new System.Drawing.Point(0, 24);
-            this.panel_izq.Name = "panel_izq";
-            this.panel_izq.Size = new System.Drawing.Size(227, 700);
-            this.panel_izq.TabIndex = 1;
             // 
             // panel_inf
             // 
@@ -111,9 +102,9 @@
             this.panel1.Controls.Add(this.chart2);
             this.panel1.Controls.Add(this.chart1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(227, 24);
+            this.panel1.Location = new System.Drawing.Point(0, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1133, 700);
+            this.panel1.Size = new System.Drawing.Size(1360, 700);
             this.panel1.TabIndex = 5;
             // 
             // label1
@@ -196,21 +187,21 @@
             this.Grf_PlacasMes.BackColor = System.Drawing.Color.Transparent;
             this.Grf_PlacasMes.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.DarkUpwardDiagonal;
             this.Grf_PlacasMes.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.Grf_PlacasMes.ChartAreas.Add(chartArea1);
+            chartArea7.Name = "ChartArea1";
+            this.Grf_PlacasMes.ChartAreas.Add(chartArea7);
             this.Grf_PlacasMes.Dock = System.Windows.Forms.DockStyle.Top;
-            legend1.Name = "Legend1";
-            this.Grf_PlacasMes.Legends.Add(legend1);
+            legend7.Name = "Legend1";
+            this.Grf_PlacasMes.Legends.Add(legend7);
             this.Grf_PlacasMes.Location = new System.Drawing.Point(0, 0);
             this.Grf_PlacasMes.Name = "Grf_PlacasMes";
-            series1.BackSecondaryColor = System.Drawing.Color.Sienna;
-            series1.ChartArea = "ChartArea1";
-            series1.IsValueShownAsLabel = true;
-            series1.Legend = "Legend1";
-            series1.Name = "Placas del mes";
-            series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            this.Grf_PlacasMes.Series.Add(series1);
-            this.Grf_PlacasMes.Size = new System.Drawing.Size(1133, 156);
+            series7.BackSecondaryColor = System.Drawing.Color.Sienna;
+            series7.ChartArea = "ChartArea1";
+            series7.IsValueShownAsLabel = true;
+            series7.Legend = "Legend1";
+            series7.Name = "Placas del mes";
+            series7.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            this.Grf_PlacasMes.Series.Add(series7);
+            this.Grf_PlacasMes.Size = new System.Drawing.Size(1360, 156);
             this.Grf_PlacasMes.TabIndex = 21;
             this.Grf_PlacasMes.Text = "chart1";
             // 
@@ -220,20 +211,20 @@
             this.chart2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.chart2.BackSecondaryColor = System.Drawing.Color.Transparent;
             this.chart2.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
+            chartArea8.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea8);
             this.chart2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
+            legend8.Name = "Legend1";
+            this.chart2.Legends.Add(legend8);
             this.chart2.Location = new System.Drawing.Point(0, 497);
             this.chart2.Name = "chart2";
-            series2.ChartArea = "ChartArea1";
-            series2.IsValueShownAsLabel = true;
-            series2.Legend = "Legend1";
-            series2.Name = "Placas del Año";
-            series2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(1133, 203);
+            series8.ChartArea = "ChartArea1";
+            series8.IsValueShownAsLabel = true;
+            series8.Legend = "Legend1";
+            series8.Name = "Placas del Año";
+            series8.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            this.chart2.Series.Add(series8);
+            this.chart2.Size = new System.Drawing.Size(1360, 203);
             this.chart2.TabIndex = 23;
             this.chart2.Text = "chart2";
             // 
@@ -244,19 +235,19 @@
             this.chart1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.chart1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.DarkDownwardDiagonal;
             this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea9.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea9);
+            legend9.Name = "Legend1";
+            this.chart1.Legends.Add(legend9);
             this.chart1.Location = new System.Drawing.Point(697, 215);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series3.IsValueShownAsLabel = true;
-            series3.Legend = "Legend1";
-            series3.Name = "Top 5 del Mes";
-            series3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            this.chart1.Series.Add(series3);
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series9.IsValueShownAsLabel = true;
+            series9.Legend = "Legend1";
+            series9.Name = "Top 5 del Mes";
+            series9.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            this.chart1.Series.Add(series9);
             this.chart1.Size = new System.Drawing.Size(475, 276);
             this.chart1.TabIndex = 22;
             this.chart1.Text = "chart1";
@@ -269,10 +260,10 @@
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel_der);
-            this.Controls.Add(this.panel_izq);
             this.Controls.Add(this.panel_inf);
             this.Controls.Add(this.panel_sup);
             this.Name = "MenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MenuPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MenuPrincipal_FormClosed);
@@ -288,7 +279,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel_izq;
         private System.Windows.Forms.Panel panel_inf;
         private System.Windows.Forms.Panel panel_der;
         private System.Windows.Forms.Panel panel_sup;
