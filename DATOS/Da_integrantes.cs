@@ -30,5 +30,39 @@ namespace DATOS
             cmd.Parameters.Clear();
             cadena.CERRAR_SERVER();                            
         }
+
+        //ver usuarios
+
+       public DataTable usuarios = new DataTable();
+        SqlDataReader cargar_usuarios;
+
+        public DataTable ver_usuarios()
+        {
+            cmd.Connection = cadena.ABRIR_SERVER();
+            cmd.CommandText = "verusuarios";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cargar_usuarios = cmd.ExecuteReader();
+
+            usuarios.Load(cargar_usuarios);
+            cadena.CERRAR_SERVER();
+            return usuarios;
+        }
+
+      
+        SqlDataReader leer;
+       public DataTable tabla_integrantes = new DataTable(); 
+
+        public DataTable mostrar_integrantes()
+        {
+            //tabla_integrantes.Clear();
+            cmd.Connection = cadena.ABRIR_SERVER();
+            cmd.CommandText = "sp_MostrarIntegrantes";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            leer = cmd.ExecuteReader();
+            tabla_integrantes.Load(leer);
+            cadena.CERRAR_SERVER();
+            return tabla_integrantes;
+        }
     }
 }

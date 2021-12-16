@@ -42,6 +42,10 @@
       <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net45\FontAwesome.Sharp.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FontAwesome.Sharp.Pro, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.Pro.5.15.4\lib\net45\FontAwesome.Sharp.Pro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -149,8 +153,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Scripts\jquery-3.6.0.min.map" />
-    <None Include="Scripts\jquery-3.6.0.slim.min.map" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -163,13 +165,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scripts\jquery-3.6.0.intellisense.js" />
-    <Content Include="Scripts\jquery-3.6.0.js" />
-    <Content Include="Scripts\jquery-3.6.0.min.js" />
-    <Content Include="Scripts\jquery-3.6.0.slim.js" />
-    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

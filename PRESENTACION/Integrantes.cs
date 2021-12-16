@@ -19,10 +19,10 @@ namespace PRESENTACION
         {
             InitializeComponent();
         }
-        cn_MostrarIntegrantes mostarIntegrantes_cn = new cn_MostrarIntegrantes();
+        CN_INTEGRANTES mostarIntegrantes_cn = new CN_INTEGRANTES();
         private void mostrarIntegrantes()
         {
-            cn_MostrarIntegrantes objeto = new cn_MostrarIntegrantes();
+            CN_INTEGRANTES objeto = new CN_INTEGRANTES();
             dgv_integrantes.DataSource = objeto.mostar_integ();
         }
         private void Integrantes_Load(object sender, EventArgs e)

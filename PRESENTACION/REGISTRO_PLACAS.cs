@@ -19,7 +19,7 @@ namespace PRESENTACION
         }
 
         //HACER REFERENCIA A LA CLASE DE LA CAPA NEGOCIO
-        CN_InsertPLacas AGREGARPLACAS_CN = new CN_InsertPLacas();
+        CN_PLacas AGREGARPLACAS_CN = new CN_PLacas();
        
         private void iconButton1_Click(object sender, EventArgs e)
         {

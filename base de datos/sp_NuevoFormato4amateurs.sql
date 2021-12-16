@@ -106,5 +106,9 @@ inner join fecha as f on p.id_mes = f.id_mes where p.ID_INTEGRANTE = @id_integra
 go
 
 
-
+--mostrar todos los usuarios
+create proc verusuarios
+as
+select * from integrantes
+go
 

@@ -211,7 +211,7 @@
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(92, 51);
             this.iconButton2.TabIndex = 21;
-            this.iconButton2.Text = "AGREGAR";
+            this.iconButton2.Text = "ELIMINAR";
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
@@ -230,9 +230,10 @@
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(92, 51);
             this.iconButton3.TabIndex = 22;
-            this.iconButton3.Text = "AGREGAR";
+            this.iconButton3.Text = "EDITAR";
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // REGIST_USU_AMATEURS
             // 

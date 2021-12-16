@@ -34,19 +34,19 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.dgv_integrantes = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.txt_idUsuario = new System.Windows.Forms.TextBox();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_integrantes)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -62,18 +62,10 @@
             this.panel3.Size = new System.Drawing.Size(232, 633);
             this.panel3.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel2.Controls.Add(this.iconButton1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1303, 40);
-            this.panel2.TabIndex = 1;
-            // 
             // dgv_integrantes
             // 
+            this.dgv_integrantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_integrantes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_integrantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_integrantes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_integrantes.Location = new System.Drawing.Point(0, 0);
@@ -83,21 +75,15 @@
             this.dgv_integrantes.TabIndex = 0;
             this.dgv_integrantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_integrantes_CellContentClick);
             // 
-            // panel1
+            // panel2
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 673);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1283, 25);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1283, 40);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(20, 658);
-            this.panel5.TabIndex = 3;
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel2.Controls.Add(this.iconButton1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1303, 40);
+            this.panel2.TabIndex = 1;
             // 
             // iconButton1
             // 
@@ -118,6 +104,22 @@
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 673);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1283, 25);
+            this.panel1.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(1283, 40);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(20, 658);
+            this.panel5.TabIndex = 3;
             // 
             // txt_idUsuario
             // 
@@ -246,8 +248,8 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Integrantes_FormClosed);
             this.Load += new System.EventHandler(this.Integrantes_Load);
             this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_integrantes)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
