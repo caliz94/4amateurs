@@ -30,5 +30,20 @@ namespace PRESENTACION
             txt_mes.Clear();
             txt_semana.Clear();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

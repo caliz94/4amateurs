@@ -21,5 +21,31 @@ namespace PRESENTACION
         {
 
         }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "decaliz")
+            {
+                if (textBox2.Text == "1234")
+                {
+                    CP_CONTENEDOR abrirform =new CP_CONTENEDOR();
+                    abrirform.TopLevel = true;                    
+                    abrirform.Show();
+
+                    textBox1.Clear();
+                    textBox2.Clear();                   
+                }
+                else
+                {
+                    errorProvider1.SetError(textBox1,"");
+                    errorProvider1.SetError(textBox2, "Contraseña Incorrecta");
+                }
+            }
+            else
+            {
+                errorProvider1.SetError(textBox1,"El Usuario No existe");
+            }
+          
+        }
     }
 }

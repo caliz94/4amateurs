@@ -44,5 +44,19 @@ namespace PRESENTACION
             this.pnl_cont.Tag = abrirform;
             abrirform.Show();
         }
+
+        private void pARTICIPANTESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aDMINISTRARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            REGIST_USU_AMATEURS abrirform = REGIST_USU_AMATEURS.Abrir;
+            abrirform.TopLevel = false;
+            this.pnl_cont.Controls.Add(abrirform);
+            this.pnl_cont.Tag = abrirform;
+            abrirform.Show();
+        }
     }
 }

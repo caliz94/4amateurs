@@ -32,8 +32,6 @@
             this.iNTEGRANTESDECLANToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.eSTADISTICASToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.aDMINISTRARToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
-            this.nUEVOINTEGRANTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eDITARELIMINARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pARTICIPACIONESDESALASToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.pARTICIPANTESToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.gANADORESToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
@@ -62,7 +60,7 @@
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(12, 18);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(254, 218);
+            this.menuStrip1.Size = new System.Drawing.Size(254, 237);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -92,27 +90,13 @@
             // 
             // aDMINISTRARToolStripMenuItem
             // 
-            this.aDMINISTRARToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nUEVOINTEGRANTEToolStripMenuItem,
-            this.eDITARELIMINARToolStripMenuItem});
             this.aDMINISTRARToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.None;
             this.aDMINISTRARToolStripMenuItem.IconColor = System.Drawing.Color.Black;
             this.aDMINISTRARToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.aDMINISTRARToolStripMenuItem.Name = "aDMINISTRARToolStripMenuItem";
             this.aDMINISTRARToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.aDMINISTRARToolStripMenuItem.Text = "ADMINISTRAR";
-            // 
-            // nUEVOINTEGRANTEToolStripMenuItem
-            // 
-            this.nUEVOINTEGRANTEToolStripMenuItem.Name = "nUEVOINTEGRANTEToolStripMenuItem";
-            this.nUEVOINTEGRANTEToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.nUEVOINTEGRANTEToolStripMenuItem.Text = "NUEVO INTEGRANTE";
-            // 
-            // eDITARELIMINARToolStripMenuItem
-            // 
-            this.eDITARELIMINARToolStripMenuItem.Name = "eDITARELIMINARToolStripMenuItem";
-            this.eDITARELIMINARToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.eDITARELIMINARToolStripMenuItem.Text = "EDITAR / ELIMINAR";
+            this.aDMINISTRARToolStripMenuItem.Click += new System.EventHandler(this.aDMINISTRARToolStripMenuItem_Click);
             // 
             // pARTICIPACIONESDESALASToolStripMenuItem
             // 
@@ -136,6 +120,7 @@
             this.pARTICIPANTESToolStripMenuItem.Name = "pARTICIPANTESToolStripMenuItem";
             this.pARTICIPANTESToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.pARTICIPANTESToolStripMenuItem.Text = "PARTICIPANTES";
+            this.pARTICIPANTESToolStripMenuItem.Click += new System.EventHandler(this.pARTICIPANTESToolStripMenuItem_Click);
             // 
             // gANADORESToolStripMenuItem
             // 
@@ -246,8 +231,6 @@
         private FontAwesome.Sharp.IconMenuItem iNTEGRANTESDECLANToolStripMenuItem;
         private FontAwesome.Sharp.IconMenuItem eSTADISTICASToolStripMenuItem;
         private FontAwesome.Sharp.IconMenuItem aDMINISTRARToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nUEVOINTEGRANTEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eDITARELIMINARToolStripMenuItem;
         private FontAwesome.Sharp.IconMenuItem pARTICIPACIONESDESALASToolStripMenuItem;
         private FontAwesome.Sharp.IconMenuItem pARTICIPANTESToolStripMenuItem;
         private FontAwesome.Sharp.IconMenuItem gANADORESToolStripMenuItem;

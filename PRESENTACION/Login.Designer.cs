@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_login = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
@@ -35,8 +36,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_login
@@ -46,11 +49,12 @@
             this.btn_login.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.btn_login.IconColor = System.Drawing.Color.DarkGreen;
             this.btn_login.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_login.Location = new System.Drawing.Point(76, 221);
+            this.btn_login.Location = new System.Drawing.Point(69, 221);
             this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(86, 62);
+            this.btn_login.Size = new System.Drawing.Size(100, 62);
             this.btn_login.TabIndex = 1;
             this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // iconPictureBox2
             // 
@@ -87,7 +91,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(69, 195);
+            this.textBox1.Location = new System.Drawing.Point(69, 152);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(100, 20);
@@ -113,10 +117,14 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(69, 152);
+            this.textBox2.Location = new System.Drawing.Point(69, 195);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 6;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Login
             // 
@@ -131,10 +139,12 @@
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.iconPictureBox3);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,5 +158,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
