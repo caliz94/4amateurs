@@ -41,11 +41,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.activo = new System.Windows.Forms.RadioButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.BTN_GUARDAR = new FontAwesome.Sharp.IconButton();
+            this.dgv_usuarios = new System.Windows.Forms.DataGridView();
+            this.BTN_ELIMINAR = new FontAwesome.Sharp.IconButton();
+            this.BTN_EDITAR = new FontAwesome.Sharp.IconButton();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_usuario
@@ -168,82 +168,82 @@
             this.activo.Text = "Activo";
             this.activo.UseVisualStyleBackColor = true;
             // 
-            // iconButton1
+            // BTN_GUARDAR
             // 
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
-            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Flames", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.iconButton1.IconColor = System.Drawing.Color.Green;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 35;
-            this.iconButton1.Location = new System.Drawing.Point(190, 264);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(92, 51);
-            this.iconButton1.TabIndex = 19;
-            this.iconButton1.Text = "AGREGAR";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.BTN_GUARDAR.FlatAppearance.BorderSize = 0;
+            this.BTN_GUARDAR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
+            this.BTN_GUARDAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BTN_GUARDAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_GUARDAR.Font = new System.Drawing.Font("Flames", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_GUARDAR.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.BTN_GUARDAR.IconColor = System.Drawing.Color.Green;
+            this.BTN_GUARDAR.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BTN_GUARDAR.IconSize = 35;
+            this.BTN_GUARDAR.Location = new System.Drawing.Point(190, 264);
+            this.BTN_GUARDAR.Name = "BTN_GUARDAR";
+            this.BTN_GUARDAR.Size = new System.Drawing.Size(92, 51);
+            this.BTN_GUARDAR.TabIndex = 19;
+            this.BTN_GUARDAR.Text = "AGREGAR";
+            this.BTN_GUARDAR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BTN_GUARDAR.UseVisualStyleBackColor = true;
+            this.BTN_GUARDAR.Click += new System.EventHandler(this.iconButton1_Click);
             // 
-            // dataGridView1
+            // dgv_usuarios
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(288, 13);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(425, 302);
-            this.dataGridView1.TabIndex = 20;
+            this.dgv_usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_usuarios.Location = new System.Drawing.Point(288, 13);
+            this.dgv_usuarios.Name = "dgv_usuarios";
+            this.dgv_usuarios.Size = new System.Drawing.Size(425, 302);
+            this.dgv_usuarios.TabIndex = 20;
             // 
-            // iconButton2
+            // BTN_ELIMINAR
             // 
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
-            this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Flames", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.iconButton2.IconColor = System.Drawing.Color.Green;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 35;
-            this.iconButton2.Location = new System.Drawing.Point(621, 321);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(92, 51);
-            this.iconButton2.TabIndex = 21;
-            this.iconButton2.Text = "ELIMINAR";
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.iconButton2.UseVisualStyleBackColor = true;
+            this.BTN_ELIMINAR.FlatAppearance.BorderSize = 0;
+            this.BTN_ELIMINAR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
+            this.BTN_ELIMINAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BTN_ELIMINAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_ELIMINAR.Font = new System.Drawing.Font("Flames", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_ELIMINAR.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.BTN_ELIMINAR.IconColor = System.Drawing.Color.Green;
+            this.BTN_ELIMINAR.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BTN_ELIMINAR.IconSize = 35;
+            this.BTN_ELIMINAR.Location = new System.Drawing.Point(621, 321);
+            this.BTN_ELIMINAR.Name = "BTN_ELIMINAR";
+            this.BTN_ELIMINAR.Size = new System.Drawing.Size(92, 51);
+            this.BTN_ELIMINAR.TabIndex = 21;
+            this.BTN_ELIMINAR.Text = "ELIMINAR";
+            this.BTN_ELIMINAR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BTN_ELIMINAR.UseVisualStyleBackColor = true;
             // 
-            // iconButton3
+            // BTN_EDITAR
             // 
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
-            this.iconButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Flames", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.iconButton3.IconColor = System.Drawing.Color.Green;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 35;
-            this.iconButton3.Location = new System.Drawing.Point(523, 321);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(92, 51);
-            this.iconButton3.TabIndex = 22;
-            this.iconButton3.Text = "EDITAR";
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.iconButton3.UseVisualStyleBackColor = true;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            this.BTN_EDITAR.FlatAppearance.BorderSize = 0;
+            this.BTN_EDITAR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
+            this.BTN_EDITAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BTN_EDITAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_EDITAR.Font = new System.Drawing.Font("Flames", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_EDITAR.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.BTN_EDITAR.IconColor = System.Drawing.Color.Green;
+            this.BTN_EDITAR.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BTN_EDITAR.IconSize = 35;
+            this.BTN_EDITAR.Location = new System.Drawing.Point(523, 321);
+            this.BTN_EDITAR.Name = "BTN_EDITAR";
+            this.BTN_EDITAR.Size = new System.Drawing.Size(92, 51);
+            this.BTN_EDITAR.TabIndex = 22;
+            this.BTN_EDITAR.Text = "EDITAR";
+            this.BTN_EDITAR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BTN_EDITAR.UseVisualStyleBackColor = true;
+            this.BTN_EDITAR.Click += new System.EventHandler(this.BTN_EDITAR_Click);
             // 
             // REGIST_USU_AMATEURS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(725, 400);
-            this.Controls.Add(this.iconButton3);
-            this.Controls.Add(this.iconButton2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.iconButton1);
+            this.Controls.Add(this.BTN_EDITAR);
+            this.Controls.Add(this.BTN_ELIMINAR);
+            this.Controls.Add(this.dgv_usuarios);
+            this.Controls.Add(this.BTN_GUARDAR);
             this.Controls.Add(this.activo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -261,7 +261,8 @@
             this.Text = "REGIST_USU_AMATEURS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.REGIST_USU_AMATEURS_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.REGIST_USU_AMATEURS_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,9 +283,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RadioButton activo;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton BTN_GUARDAR;
+        private System.Windows.Forms.DataGridView dgv_usuarios;
+        private FontAwesome.Sharp.IconButton BTN_ELIMINAR;
+        private FontAwesome.Sharp.IconButton BTN_EDITAR;
     }
 }

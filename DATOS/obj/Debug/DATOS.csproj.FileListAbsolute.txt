@@ -29,3 +29,7 @@ I:\SOFTWARE DE 4AMATEURS\4AMATEURS\DATOS\bin\Debug\Plugin.InputKit.xml
 I:\SOFTWARE DE 4AMATEURS\4AMATEURS\DATOS\obj\Debug\DATOS.csprojResolveAssemblyReference.cache
 I:\SOFTWARE DE 4AMATEURS\4AMATEURS\DATOS\obj\Debug\DATOS.dll
 I:\SOFTWARE DE 4AMATEURS\4AMATEURS\DATOS\obj\Debug\DATOS.pdb
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\bin\Debug\DATOS.dll
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\bin\Debug\DATOS.pdb
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\obj\Debug\DATOS.dll
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\obj\Debug\DATOS.pdb

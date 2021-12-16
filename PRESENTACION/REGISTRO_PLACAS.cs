@@ -19,6 +19,7 @@ namespace PRESENTACION
         }
 
         //HACER REFERENCIA A LA CLASE DE LA CAPA NEGOCIO
+        CN_INTEGRANTES integrantes_cn = new CN_INTEGRANTES();
         CN_PLacas AGREGARPLACAS_CN = new CN_PLacas();
        
         private void iconButton1_Click(object sender, EventArgs e)
@@ -31,17 +32,12 @@ namespace PRESENTACION
             txt_semana.Clear();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void iconButton2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void iconButton1_Click_1(object sender, EventArgs e)
+        private void REGISTRO_PLACAS_Load(object sender, EventArgs e)
         {
 
         }

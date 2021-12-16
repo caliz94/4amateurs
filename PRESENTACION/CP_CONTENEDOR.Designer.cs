@@ -147,6 +147,7 @@
             this.rEGISTRODEPLACASToolStripMenuItem.Name = "rEGISTRODEPLACASToolStripMenuItem";
             this.rEGISTRODEPLACASToolStripMenuItem.Size = new System.Drawing.Size(247, 52);
             this.rEGISTRODEPLACASToolStripMenuItem.Text = "REGISTRO DE PLACAS";
+            this.rEGISTRODEPLACASToolStripMenuItem.Click += new System.EventHandler(this.rEGISTRODEPLACASToolStripMenuItem_Click);
             // 
             // estadisticasToolStripMenuItem1
             // 

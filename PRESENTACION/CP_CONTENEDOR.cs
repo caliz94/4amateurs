@@ -58,5 +58,10 @@ namespace PRESENTACION
             this.pnl_cont.Tag = abrirform;
             abrirform.Show();
         }
+
+        private void rEGISTRODEPLACASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

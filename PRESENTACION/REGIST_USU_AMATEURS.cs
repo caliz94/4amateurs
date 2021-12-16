@@ -48,9 +48,23 @@ namespace PRESENTACION
             _Abrir = null;
         }
 
-        private void iconButton3_Click(object sender, EventArgs e)
+        public void mostrar()
         {
+            dgv_usuarios.DataSource = INTEGRANTES_CN.mostar_integ();
+        }
 
+        private void REGIST_USU_AMATEURS_Load(object sender, EventArgs e)
+        {
+            mostrar();
+        }
+
+        private void BTN_EDITAR_Click(object sender, EventArgs e)
+        {
+            txt_usuario.Text = dgv_usuarios.CurrentRow.Cells["USUARIO"].Value.ToString();
+            txt_celular.Text = dgv_usuarios.CurrentRow.Cells["CELULAR"].Value.ToString();
+            txt_pais.Text = dgv_usuarios.CurrentRow.Cells["PAIS_NACIONALIDAD"].Value.ToString(); ;
+            txt_fecha_ingreso.Text = dgv_usuarios.CurrentRow.Cells["FECHA_INGRESO"].Value.ToString();
+            txt_comentario.Text = dgv_usuarios.CurrentRow.Cells["COMENTARIO"].Value.ToString();          
         }
     }
 }

@@ -22,10 +22,17 @@ namespace NEGOCIO
        public DataTable mostar_integ()
        {
            DataTable tabla = new DataTable();
-           tabla = integrantes_CD.mostrar_integrantes();
+           tabla = integrantes_CD.ver_usuarios();
            return tabla;
-       }   
-        
-             
+       }
+
+        public DataTable mostar_integ_2()
+        {
+            DataTable tabla = new DataTable();
+            tabla = integrantes_CD.mostrar_integrantes();
+            return tabla;
+        }
+
+
     }
 }
