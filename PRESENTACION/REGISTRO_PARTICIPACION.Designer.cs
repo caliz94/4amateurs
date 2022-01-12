@@ -139,11 +139,10 @@
             this.iconButton2.IconColor = System.Drawing.Color.Green;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 35;
-            this.iconButton2.Location = new System.Drawing.Point(330, 0);
+            this.iconButton2.Location = new System.Drawing.Point(438, 0);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(145, 475);
+            this.iconButton2.Size = new System.Drawing.Size(37, 475);
             this.iconButton2.TabIndex = 19;
-            this.iconButton2.Text = "REGRESAR";
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton2.UseVisualStyleBackColor = true;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click_1);
