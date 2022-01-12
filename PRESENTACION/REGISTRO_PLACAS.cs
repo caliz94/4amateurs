@@ -37,9 +37,15 @@ namespace PRESENTACION
             this.Close();
         }
 
-        private void REGISTRO_PLACAS_Load(object sender, EventArgs e)
+        private static REGISTRO_PLACAS _Abrir;
+        public static REGISTRO_PLACAS Abrir
         {
-
+            get
+            {
+                if (_Abrir == null)
+                    _Abrir = new REGISTRO_PLACAS();
+                return _Abrir;
+            }
         }
     }
 }

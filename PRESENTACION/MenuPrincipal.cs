@@ -103,9 +103,9 @@ namespace PRESENTACION
             _Abrir = null;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void iconButton1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

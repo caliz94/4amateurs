@@ -33,3 +33,4 @@ E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\bin\Debug\DATOS.
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\bin\Debug\DATOS.pdb
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\obj\Debug\DATOS.dll
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\obj\Debug\DATOS.pdb
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\obj\Debug\DATOS.csprojResolveAssemblyReference.cache

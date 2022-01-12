@@ -31,8 +31,9 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgv_integrantes = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -159,12 +160,6 @@
             this.chart2.Location = new System.Drawing.Point(983, 40);
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            this.chart2.PaletteCustomColors = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))),
-        System.Drawing.Color.Blue,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255))))),
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))))};
             this.chart2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             series1.BackImageTransparentColor = System.Drawing.Color.Transparent;
@@ -184,7 +179,13 @@
             series1.SmartLabelStyle.CalloutStyle = System.Windows.Forms.DataVisualization.Charting.LabelCalloutStyle.None;
             series1.SmartLabelStyle.IsOverlappedHidden = false;
             series1.YValuesPerPoint = 4;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
+            series2.Legend = "Legend1";
+            series2.Name = "Series2";
+            series2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
             this.chart2.Series.Add(series1);
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(300, 405);
             this.chart2.TabIndex = 5;
             this.chart2.Text = "chart2";
@@ -206,13 +207,13 @@
             this.chart1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.chart1.Location = new System.Drawing.Point(232, 445);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.CustomProperties = "DrawingStyle=Cylinder, EmptyPointValue=Zero, LabelStyle=Bottom";
-            series2.IsValueShownAsLabel = true;
-            series2.IsXValueIndexed = true;
-            series2.Name = "Series1";
-            series2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            this.chart1.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.CustomProperties = "DrawingStyle=Cylinder, EmptyPointValue=Zero, LabelStyle=Bottom";
+            series3.IsValueShownAsLabel = true;
+            series3.IsXValueIndexed = true;
+            series3.Name = "Series1";
+            series3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(1051, 228);
             this.chart1.TabIndex = 6;
             this.chart1.Text = "chart1";

@@ -17,6 +17,7 @@ namespace PRESENTACION
             InitializeComponent();
         }
 
+        
         private void eSTADISTICASToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Integrantes abrirform = Integrantes.Abrir;
@@ -25,17 +26,6 @@ namespace PRESENTACION
             this.pnl_cont.Tag = abrirform;
             abrirform.Show();
         }
-
-        private void eSTADISTICASDECLANToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void pARTICIPACIONESDESALASToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-           
-        }
-
         private void estadisticasToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             MenuPrincipal abrirform = MenuPrincipal.Abrir;
@@ -44,12 +34,6 @@ namespace PRESENTACION
             this.pnl_cont.Tag = abrirform;
             abrirform.Show();
         }
-
-        private void pARTICIPANTESToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void aDMINISTRARToolStripMenuItem_Click(object sender, EventArgs e)
         {
             REGIST_USU_AMATEURS abrirform = REGIST_USU_AMATEURS.Abrir;
@@ -61,7 +45,26 @@ namespace PRESENTACION
 
         private void rEGISTRODEPLACASToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          
+            REGISTRO_PLACAS abrirform = REGISTRO_PLACAS.Abrir;
+            abrirform.TopLevel = false;
+            this.pnl_cont.Controls.Add(abrirform);
+            this.pnl_cont.Tag = abrirform;
+            abrirform.Show();
+        }
+
+        private void gANADORESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pARTICIPANTESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pARTICIPACIONESDESALASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

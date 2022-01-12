@@ -110,6 +110,7 @@
             this.iconButton1.TabIndex = 10;
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // panel1
             // 
@@ -228,7 +229,7 @@
             this.label1.TabIndex = 41;
             this.label1.Text = "Top 5 del Mes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+          
             // 
             // panel3
             // 

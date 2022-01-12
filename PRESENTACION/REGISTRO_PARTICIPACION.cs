@@ -16,15 +16,20 @@ namespace PRESENTACION
         {
             InitializeComponent();
         }
-
-        private void iconButton1_Click(object sender, EventArgs e)
+        private static REGISTRO_PARTICIPACION _Abrir;
+        public static REGISTRO_PARTICIPACION Abrir
         {
-
+            get
+            {
+                if (_Abrir == null)
+                    _Abrir = new REGISTRO_PARTICIPACION();
+                return _Abrir;
+            }
         }
 
-        private void iconButton2_Click(object sender, EventArgs e)
+        private void iconButton2_Click_1(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

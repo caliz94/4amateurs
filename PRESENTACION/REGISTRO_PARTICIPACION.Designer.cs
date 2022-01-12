@@ -37,6 +37,7 @@
             this.txt_FECHA = new System.Windows.Forms.TextBox();
             this.txt_PARTICIPACIONES = new System.Windows.Forms.TextBox();
             this.txt_id_integrante = new System.Windows.Forms.TextBox();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // iconButton1
@@ -57,7 +58,6 @@
             this.iconButton1.Text = "AGREGAR";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // label4
             // 
@@ -127,11 +127,33 @@
             this.txt_id_integrante.Size = new System.Drawing.Size(147, 20);
             this.txt_id_integrante.TabIndex = 10;
             // 
+            // iconButton2
+            // 
+            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
+            this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Flames", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleLeft;
+            this.iconButton2.IconColor = System.Drawing.Color.Green;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 35;
+            this.iconButton2.Location = new System.Drawing.Point(330, 0);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(145, 475);
+            this.iconButton2.TabIndex = 19;
+            this.iconButton2.Text = "REGRESAR";
+            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click_1);
+            // 
             // REGISTRO_PARTICIPACION
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 475);
+            this.ClientSize = new System.Drawing.Size(475, 475);
+            this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -160,5 +182,6 @@
         private System.Windows.Forms.TextBox txt_FECHA;
         private System.Windows.Forms.TextBox txt_PARTICIPACIONES;
         private System.Windows.Forms.TextBox txt_id_integrante;
+        private FontAwesome.Sharp.IconButton iconButton2;
     }
 }

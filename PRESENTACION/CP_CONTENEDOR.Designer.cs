@@ -35,7 +35,6 @@
             this.pARTICIPACIONESDESALASToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.pARTICIPANTESToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.gANADORESToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.rEGISTRODEPLACASToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.estadisticasToolStripMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.pnl_izq = new System.Windows.Forms.Panel();
@@ -54,13 +53,12 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.iNTEGRANTESDECLANToolStripMenuItem,
             this.pARTICIPACIONESDESALASToolStripMenuItem,
-            this.toolStripMenuItem1,
             this.rEGISTRODEPLACASToolStripMenuItem,
             this.estadisticasToolStripMenuItem1});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(12, 18);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(254, 237);
+            this.menuStrip1.Size = new System.Drawing.Size(254, 233);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -130,13 +128,7 @@
             this.gANADORESToolStripMenuItem.Name = "gANADORESToolStripMenuItem";
             this.gANADORESToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.gANADORESToolStripMenuItem.Text = "GANADORES";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.AutoToolTip = true;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(247, 4);
-            this.toolStripMenuItem1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical90;
+            this.gANADORESToolStripMenuItem.Click += new System.EventHandler(this.gANADORESToolStripMenuItem_Click);
             // 
             // rEGISTRODEPLACASToolStripMenuItem
             // 
@@ -228,7 +220,6 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private FontAwesome.Sharp.IconMenuItem iNTEGRANTESDECLANToolStripMenuItem;
         private FontAwesome.Sharp.IconMenuItem eSTADISTICASToolStripMenuItem;
         private FontAwesome.Sharp.IconMenuItem aDMINISTRARToolStripMenuItem;
