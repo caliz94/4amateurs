@@ -53,7 +53,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackColor = System.Drawing.Color.Sienna;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.dgv_integrantes);
@@ -74,6 +74,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Sienna;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox1.Location = new System.Drawing.Point(378, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -189,7 +190,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackColor = System.Drawing.Color.Sienna;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -198,7 +199,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackColor = System.Drawing.Color.Sienna;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(25, 464);
             this.panel3.Name = "panel3";
@@ -207,7 +208,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.MistyRose;
+            this.panel4.BackColor = System.Drawing.Color.Sienna;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(25, 0);
             this.panel4.Name = "panel4";
@@ -225,7 +226,7 @@
             // 
             // iconButton2
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.MistyRose;
+            this.iconButton2.BackColor = System.Drawing.Color.Sienna;
             this.iconButton2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.iconButton2.FlatAppearance.BorderSize = 0;
             this.iconButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
