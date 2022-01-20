@@ -41,8 +41,8 @@
             this.pnl_cont = new System.Windows.Forms.Panel();
             this.pnl_inf = new System.Windows.Forms.Panel();
             this.pnl_sup = new System.Windows.Forms.Panel();
-            this.pnl_der = new System.Windows.Forms.Panel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.pnl_der = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.pnl_izq.SuspendLayout();
@@ -79,7 +79,7 @@
             this.iNTEGRANTESDECLANToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.iNTEGRANTESDECLANToolStripMenuItem.Name = "iNTEGRANTESDECLANToolStripMenuItem";
             this.iNTEGRANTESDECLANToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.iNTEGRANTESDECLANToolStripMenuItem.Size = new System.Drawing.Size(259, 52);
+            this.iNTEGRANTESDECLANToolStripMenuItem.Size = new System.Drawing.Size(247, 52);
             this.iNTEGRANTESDECLANToolStripMenuItem.Text = "INTEGRANTES DE CLAN";
             // 
             // eSTADISTICASToolStripMenuItem
@@ -115,7 +115,7 @@
             this.pARTICIPACIONESDESALASToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.pARTICIPACIONESDESALASToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.pARTICIPACIONESDESALASToolStripMenuItem.Name = "pARTICIPACIONESDESALASToolStripMenuItem";
-            this.pARTICIPACIONESDESALASToolStripMenuItem.Size = new System.Drawing.Size(259, 52);
+            this.pARTICIPACIONESDESALASToolStripMenuItem.Size = new System.Drawing.Size(247, 52);
             this.pARTICIPACIONESDESALASToolStripMenuItem.Text = "PARTICIPACION DE SALAS";
             this.pARTICIPACIONESDESALASToolStripMenuItem.Click += new System.EventHandler(this.pARTICIPACIONESDESALASToolStripMenuItem_Click);
             // 
@@ -147,7 +147,7 @@
             this.rEGISTRODEPLACASToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.rEGISTRODEPLACASToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.rEGISTRODEPLACASToolStripMenuItem.Name = "rEGISTRODEPLACASToolStripMenuItem";
-            this.rEGISTRODEPLACASToolStripMenuItem.Size = new System.Drawing.Size(259, 52);
+            this.rEGISTRODEPLACASToolStripMenuItem.Size = new System.Drawing.Size(247, 52);
             this.rEGISTRODEPLACASToolStripMenuItem.Text = "REGISTRO DE PLACAS";
             this.rEGISTRODEPLACASToolStripMenuItem.Click += new System.EventHandler(this.rEGISTRODEPLACASToolStripMenuItem_Click);
             // 
@@ -159,7 +159,7 @@
             this.estadisticasToolStripMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.estadisticasToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.estadisticasToolStripMenuItem1.Name = "estadisticasToolStripMenuItem1";
-            this.estadisticasToolStripMenuItem1.Size = new System.Drawing.Size(259, 52);
+            this.estadisticasToolStripMenuItem1.Size = new System.Drawing.Size(247, 52);
             this.estadisticasToolStripMenuItem1.Text = "estadisticas de clan";
             this.estadisticasToolStripMenuItem1.Click += new System.EventHandler(this.estadisticasToolStripMenuItem1_Click);
             // 
@@ -201,15 +201,6 @@
             this.pnl_sup.Size = new System.Drawing.Size(759, 34);
             this.pnl_sup.TabIndex = 4;
             // 
-            // pnl_der
-            // 
-            this.pnl_der.BackColor = System.Drawing.Color.Chocolate;
-            this.pnl_der.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_der.Location = new System.Drawing.Point(749, 34);
-            this.pnl_der.Name = "pnl_der";
-            this.pnl_der.Size = new System.Drawing.Size(10, 348);
-            this.pnl_der.TabIndex = 5;
-            // 
             // iconButton1
             // 
             this.iconButton1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -229,6 +220,15 @@
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // pnl_der
+            // 
+            this.pnl_der.BackColor = System.Drawing.Color.Chocolate;
+            this.pnl_der.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnl_der.Location = new System.Drawing.Point(749, 34);
+            this.pnl_der.Name = "pnl_der";
+            this.pnl_der.Size = new System.Drawing.Size(10, 348);
+            this.pnl_der.TabIndex = 5;
             // 
             // panel1
             // 
@@ -257,6 +257,7 @@
             this.Name = "CP_CONTENEDOR";
             this.Text = "CP_CONTENEDOR";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.CP_CONTENEDOR_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.pnl_izq.ResumeLayout(false);

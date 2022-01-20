@@ -71,5 +71,10 @@ namespace PRESENTACION
         {
             this.Close();
         }
+
+        private void CP_CONTENEDOR_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("El jhony es un peluche");
+        }
     }
 }
