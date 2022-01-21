@@ -66,5 +66,10 @@ namespace PRESENTACION
             txt_fecha_ingreso.Text = dgv_usuarios.CurrentRow.Cells["FECHA_INGRESO"].Value.ToString();
             txt_comentario.Text = dgv_usuarios.CurrentRow.Cells["COMENTARIO"].Value.ToString();          
         }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

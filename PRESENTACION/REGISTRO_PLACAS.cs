@@ -47,5 +47,15 @@ namespace PRESENTACION
                 return _Abrir;
             }
         }
+
+        private void REGISTRO_PLACAS_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _Abrir = null;
+        }
+
+        private void REGISTRO_PLACAS_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

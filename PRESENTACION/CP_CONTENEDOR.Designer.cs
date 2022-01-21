@@ -116,7 +116,7 @@
             this.pARTICIPACIONESDESALASToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.pARTICIPACIONESDESALASToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.pARTICIPACIONESDESALASToolStripMenuItem.Name = "pARTICIPACIONESDESALASToolStripMenuItem";
-            this.pARTICIPACIONESDESALASToolStripMenuItem.Size = new System.Drawing.Size(247, 52);
+            this.pARTICIPACIONESDESALASToolStripMenuItem.Size = new System.Drawing.Size(248, 53);
             this.pARTICIPACIONESDESALASToolStripMenuItem.Text = "PARTICIPACION DE SALAS";
             this.pARTICIPACIONESDESALASToolStripMenuItem.Click += new System.EventHandler(this.pARTICIPACIONESDESALASToolStripMenuItem_Click);
             // 
@@ -148,7 +148,7 @@
             this.rEGISTRODEPLACASToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.rEGISTRODEPLACASToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.rEGISTRODEPLACASToolStripMenuItem.Name = "rEGISTRODEPLACASToolStripMenuItem";
-            this.rEGISTRODEPLACASToolStripMenuItem.Size = new System.Drawing.Size(247, 52);
+            this.rEGISTRODEPLACASToolStripMenuItem.Size = new System.Drawing.Size(216, 53);
             this.rEGISTRODEPLACASToolStripMenuItem.Text = "REGISTRO DE PLACAS";
             this.rEGISTRODEPLACASToolStripMenuItem.Click += new System.EventHandler(this.rEGISTRODEPLACASToolStripMenuItem_Click);
             // 
@@ -160,7 +160,7 @@
             this.estadisticasToolStripMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.estadisticasToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.estadisticasToolStripMenuItem1.Name = "estadisticasToolStripMenuItem1";
-            this.estadisticasToolStripMenuItem1.Size = new System.Drawing.Size(247, 52);
+            this.estadisticasToolStripMenuItem1.Size = new System.Drawing.Size(231, 53);
             this.estadisticasToolStripMenuItem1.Text = "estadisticas de clan";
             this.estadisticasToolStripMenuItem1.Click += new System.EventHandler(this.estadisticasToolStripMenuItem1_Click);
             // 
@@ -170,16 +170,16 @@
             this.pnl_izq.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_izq.Location = new System.Drawing.Point(12, 57);
             this.pnl_izq.Name = "pnl_izq";
-            this.pnl_izq.Size = new System.Drawing.Size(266, 310);
+            this.pnl_izq.Size = new System.Drawing.Size(78, 310);
             this.pnl_izq.TabIndex = 1;
             // 
             // pnl_cont
             // 
             this.pnl_cont.BackColor = System.Drawing.Color.Sienna;
             this.pnl_cont.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_cont.Location = new System.Drawing.Point(278, 57);
+            this.pnl_cont.Location = new System.Drawing.Point(90, 57);
             this.pnl_cont.Name = "pnl_cont";
-            this.pnl_cont.Size = new System.Drawing.Size(630, 310);
+            this.pnl_cont.Size = new System.Drawing.Size(818, 310);
             this.pnl_cont.TabIndex = 2;
             // 
             // pnl_inf
