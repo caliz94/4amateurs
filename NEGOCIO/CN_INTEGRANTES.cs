@@ -14,9 +14,9 @@ namespace NEGOCIO
         public Da_integrantes integrantes_CD = new Da_integrantes();
 
         //metodo para insertar integrante
-        public void insertar_integrante(string USUARIO, string CELULAR, string PAIS_NACIONALIDAD, DateTime FECHA_INGRESO, string COMENTARIO, string ESTADO)
+        public void insertar_integrante(string USUARIO, string CELULAR, string PAIS_NACIONALIDAD, DateTime FECHA_INGRESO, string COMENTARIO/*, string ESTADO*/)
         {
-            integrantes_CD.insertar(USUARIO, CELULAR, PAIS_NACIONALIDAD, FECHA_INGRESO, COMENTARIO, ESTADO);
+            integrantes_CD.insertar(USUARIO, CELULAR, PAIS_NACIONALIDAD, FECHA_INGRESO, COMENTARIO/*, ESTADO*/);
         }
                 
        public DataTable mostar_integ()

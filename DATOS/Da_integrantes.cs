@@ -15,7 +15,7 @@ namespace DATOS
 
 
         //metodo para insertar
-        public void insertar(string USUARIO,string CELULAR,string PAIS_NACIONALIDAD,DateTime FECHA_INGRESO,string COMENTARIO, string ESTADO)
+        public void insertar(string USUARIO,string CELULAR,string PAIS_NACIONALIDAD,DateTime FECHA_INGRESO,string COMENTARIO/*, string ESTADO*/)
         {
             cmd.Connection = cadena.ABRIR_SERVER();
             cmd.CommandText = "sp_insertar_integrante";
@@ -25,15 +25,32 @@ namespace DATOS
             cmd.Parameters.AddWithValue("@PAIS_NACIONALIDAD", PAIS_NACIONALIDAD);
             cmd.Parameters.AddWithValue("@FECHA_INGRESO", FECHA_INGRESO);
             cmd.Parameters.AddWithValue("@COMENTARIO", COMENTARIO);
-            cmd.Parameters.AddWithValue("@ESTADO", ESTADO);
+            //cmd.Parameters.AddWithValue("@ESTADO", ESTADO);
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
             cadena.CERRAR_SERVER();                            
         }
 
+        //editar usuarios
+
+        private void editar(int ID_INTEGRANTE, string USUARIO, string CELULAR, string PAIS_NACIONALIDAD, DateTime FECHA_INGRESO, string COMENTARIO, string ESTADO)
+        {
+            cmd.Connection = cadena.ABRIR_SERVER();
+            cmd.CommandText = "editar_usuario";
+        }
+
+        //ELIMINAR usuarios
+
+        private void eliminar(int ID_INTEGRANTE)
+        {
+            cmd.Connection = cadena.ABRIR_SERVER();
+            cmd.CommandText = "eliminar_usuario";
+        }
+
+
         //ver usuarios
 
-       public DataTable usuarios = new DataTable();
+        public DataTable usuarios = new DataTable();
         SqlDataReader cargar_usuarios;
 
         public DataTable ver_usuarios()

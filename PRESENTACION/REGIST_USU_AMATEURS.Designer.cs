@@ -36,8 +36,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.BTN_GUARDAR = new FontAwesome.Sharp.IconButton();
-            this.activo = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,7 +44,6 @@
             this.txt_celular = new System.Windows.Forms.TextBox();
             this.txt_comentario = new System.Windows.Forms.TextBox();
             this.txt_fecha_ingreso = new System.Windows.Forms.TextBox();
-            this.txt_estado = new System.Windows.Forms.TextBox();
             this.txt_pais = new System.Windows.Forms.TextBox();
             this.txt_usuario = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).BeginInit();
@@ -146,8 +143,6 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.BTN_GUARDAR);
-            this.panel3.Controls.Add(this.activo);
-            this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
@@ -156,7 +151,6 @@
             this.panel3.Controls.Add(this.txt_celular);
             this.panel3.Controls.Add(this.txt_comentario);
             this.panel3.Controls.Add(this.txt_fecha_ingreso);
-            this.panel3.Controls.Add(this.txt_estado);
             this.panel3.Controls.Add(this.txt_pais);
             this.panel3.Controls.Add(this.txt_usuario);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -176,43 +170,21 @@
             this.BTN_GUARDAR.IconColor = System.Drawing.Color.Green;
             this.BTN_GUARDAR.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BTN_GUARDAR.IconSize = 35;
-            this.BTN_GUARDAR.Location = new System.Drawing.Point(218, 243);
+            this.BTN_GUARDAR.Location = new System.Drawing.Point(218, 254);
             this.BTN_GUARDAR.Name = "BTN_GUARDAR";
             this.BTN_GUARDAR.Size = new System.Drawing.Size(150, 51);
             this.BTN_GUARDAR.TabIndex = 33;
             this.BTN_GUARDAR.Text = "AGREGAR";
             this.BTN_GUARDAR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BTN_GUARDAR.UseVisualStyleBackColor = true;
-            // 
-            // activo
-            // 
-            this.activo.AutoSize = true;
-            this.activo.Font = new System.Drawing.Font("NSimSun", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.activo.Location = new System.Drawing.Point(218, 222);
-            this.activo.Name = "activo";
-            this.activo.Size = new System.Drawing.Size(65, 15);
-            this.activo.TabIndex = 32;
-            this.activo.TabStop = true;
-            this.activo.Text = "Activo";
-            this.activo.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label6.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(53, 196);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 16);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Estado";
+            this.BTN_GUARDAR.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(53, 118);
+            this.label5.Location = new System.Drawing.Point(53, 132);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 16);
             this.label5.TabIndex = 30;
@@ -223,7 +195,7 @@
             this.label4.AutoSize = true;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(53, 92);
+            this.label4.Location = new System.Drawing.Point(53, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 16);
             this.label4.TabIndex = 29;
@@ -234,7 +206,7 @@
             this.label3.AutoSize = true;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(53, 144);
+            this.label3.Location = new System.Drawing.Point(53, 169);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(152, 16);
             this.label3.TabIndex = 28;
@@ -245,7 +217,7 @@
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(53, 170);
+            this.label2.Location = new System.Drawing.Point(53, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 16);
             this.label2.TabIndex = 27;
@@ -264,44 +236,42 @@
             // 
             // txt_celular
             // 
-            this.txt_celular.Location = new System.Drawing.Point(218, 92);
+            this.txt_celular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_celular.Location = new System.Drawing.Point(218, 101);
             this.txt_celular.Name = "txt_celular";
-            this.txt_celular.Size = new System.Drawing.Size(150, 20);
+            this.txt_celular.Size = new System.Drawing.Size(150, 26);
             this.txt_celular.TabIndex = 25;
             // 
             // txt_comentario
             // 
-            this.txt_comentario.Location = new System.Drawing.Point(218, 170);
+            this.txt_comentario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_comentario.Location = new System.Drawing.Point(218, 209);
             this.txt_comentario.Name = "txt_comentario";
-            this.txt_comentario.Size = new System.Drawing.Size(150, 20);
+            this.txt_comentario.Size = new System.Drawing.Size(150, 26);
             this.txt_comentario.TabIndex = 24;
             // 
             // txt_fecha_ingreso
             // 
-            this.txt_fecha_ingreso.Location = new System.Drawing.Point(218, 144);
+            this.txt_fecha_ingreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_fecha_ingreso.Location = new System.Drawing.Point(218, 169);
             this.txt_fecha_ingreso.Name = "txt_fecha_ingreso";
-            this.txt_fecha_ingreso.Size = new System.Drawing.Size(150, 20);
+            this.txt_fecha_ingreso.Size = new System.Drawing.Size(150, 26);
             this.txt_fecha_ingreso.TabIndex = 23;
-            // 
-            // txt_estado
-            // 
-            this.txt_estado.Location = new System.Drawing.Point(218, 196);
-            this.txt_estado.Name = "txt_estado";
-            this.txt_estado.Size = new System.Drawing.Size(150, 20);
-            this.txt_estado.TabIndex = 22;
             // 
             // txt_pais
             // 
-            this.txt_pais.Location = new System.Drawing.Point(218, 121);
+            this.txt_pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pais.Location = new System.Drawing.Point(218, 135);
             this.txt_pais.Name = "txt_pais";
-            this.txt_pais.Size = new System.Drawing.Size(150, 20);
+            this.txt_pais.Size = new System.Drawing.Size(150, 26);
             this.txt_pais.TabIndex = 21;
             // 
             // txt_usuario
             // 
+            this.txt_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_usuario.Location = new System.Drawing.Point(218, 62);
             this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(150, 20);
+            this.txt_usuario.Size = new System.Drawing.Size(150, 26);
             this.txt_usuario.TabIndex = 20;
             // 
             // REGIST_USU_AMATEURS
@@ -340,8 +310,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private FontAwesome.Sharp.IconButton BTN_GUARDAR;
-        private System.Windows.Forms.RadioButton activo;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -350,7 +318,6 @@
         private System.Windows.Forms.TextBox txt_celular;
         private System.Windows.Forms.TextBox txt_comentario;
         private System.Windows.Forms.TextBox txt_fecha_ingreso;
-        private System.Windows.Forms.TextBox txt_estado;
         private System.Windows.Forms.TextBox txt_pais;
         private System.Windows.Forms.TextBox txt_usuario;
     }
