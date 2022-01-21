@@ -40,9 +40,6 @@
             this.txt_mes = new System.Windows.Forms.TextBox();
             this.txt_placas = new System.Windows.Forms.TextBox();
             this.txt_id_integrante = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
@@ -53,7 +50,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Sienna;
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.dgv_integrantes);
@@ -67,18 +64,18 @@
             this.panel1.Controls.Add(this.txt_placas);
             this.panel1.Controls.Add(this.txt_id_integrante);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(25, 21);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(592, 443);
+            this.panel1.Size = new System.Drawing.Size(612, 487);
             this.panel1.TabIndex = 11;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Sienna;
+            this.pictureBox1.BackColor = System.Drawing.Color.DimGray;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Location = new System.Drawing.Point(378, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(422, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 439);
+            this.pictureBox1.Size = new System.Drawing.Size(186, 483);
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
@@ -89,11 +86,12 @@
             this.dgv_integrantes.Dock = System.Windows.Forms.DockStyle.Left;
             this.dgv_integrantes.Location = new System.Drawing.Point(0, 0);
             this.dgv_integrantes.Name = "dgv_integrantes";
-            this.dgv_integrantes.Size = new System.Drawing.Size(185, 439);
+            this.dgv_integrantes.Size = new System.Drawing.Size(185, 483);
             this.dgv_integrantes.TabIndex = 20;
             // 
             // iconButton1
             // 
+            this.iconButton1.BackColor = System.Drawing.Color.DimGray;
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
             this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -110,54 +108,59 @@
             this.iconButton1.TabIndex = 19;
             this.iconButton1.Text = "AGREGAR";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("NSimSun", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.BackColor = System.Drawing.Color.DimGray;
+            this.label4.Font = new System.Drawing.Font("NSimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label4.Location = new System.Drawing.Point(220, 277);
+            this.label4.Location = new System.Drawing.Point(220, 269);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 11);
+            this.label4.Size = new System.Drawing.Size(75, 19);
             this.label4.TabIndex = 18;
             this.label4.Text = "SEMANA";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("NSimSun", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.BackColor = System.Drawing.Color.DimGray;
+            this.label3.Font = new System.Drawing.Font("NSimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label3.Location = new System.Drawing.Point(220, 203);
+            this.label3.Location = new System.Drawing.Point(220, 195);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 11);
+            this.label3.Size = new System.Drawing.Size(42, 19);
             this.label3.TabIndex = 17;
             this.label3.Text = "MES";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("NSimSun", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.DimGray;
+            this.label2.Font = new System.Drawing.Font("NSimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label2.Location = new System.Drawing.Point(220, 124);
+            this.label2.Location = new System.Drawing.Point(220, 116);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 11);
+            this.label2.Size = new System.Drawing.Size(75, 19);
             this.label2.TabIndex = 16;
             this.label2.Text = "PLACAS";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("NSimSun", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.DimGray;
+            this.label1.Font = new System.Drawing.Font("NSimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label1.Location = new System.Drawing.Point(220, 52);
+            this.label1.Location = new System.Drawing.Point(220, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 11);
+            this.label1.Size = new System.Drawing.Size(196, 19);
             this.label1.TabIndex = 15;
             this.label1.Text = "ID DEL INTEGRANTE";
             // 
             // txt_semana
             // 
+            this.txt_semana.BackColor = System.Drawing.Color.White;
             this.txt_semana.ForeColor = System.Drawing.Color.OrangeRed;
             this.txt_semana.Location = new System.Drawing.Point(220, 291);
             this.txt_semana.Name = "txt_semana";
@@ -166,6 +169,7 @@
             // 
             // txt_mes
             // 
+            this.txt_mes.BackColor = System.Drawing.Color.White;
             this.txt_mes.ForeColor = System.Drawing.Color.OrangeRed;
             this.txt_mes.Location = new System.Drawing.Point(220, 214);
             this.txt_mes.Name = "txt_mes";
@@ -174,6 +178,7 @@
             // 
             // txt_placas
             // 
+            this.txt_placas.BackColor = System.Drawing.Color.White;
             this.txt_placas.ForeColor = System.Drawing.Color.OrangeRed;
             this.txt_placas.Location = new System.Drawing.Point(220, 138);
             this.txt_placas.Name = "txt_placas";
@@ -182,54 +187,29 @@
             // 
             // txt_id_integrante
             // 
+            this.txt_id_integrante.BackColor = System.Drawing.Color.White;
             this.txt_id_integrante.ForeColor = System.Drawing.Color.OrangeRed;
             this.txt_id_integrante.Location = new System.Drawing.Point(220, 66);
             this.txt_id_integrante.Name = "txt_id_integrante";
             this.txt_id_integrante.Size = new System.Drawing.Size(139, 20);
             this.txt_id_integrante.TabIndex = 11;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Sienna;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(25, 487);
-            this.panel2.TabIndex = 12;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Sienna;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(25, 464);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(628, 23);
-            this.panel3.TabIndex = 13;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Sienna;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(25, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(628, 21);
-            this.panel4.TabIndex = 14;
-            // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.DimGray;
             this.panel5.Controls.Add(this.iconButton2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(617, 21);
+            this.panel5.Location = new System.Drawing.Point(612, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(36, 443);
+            this.panel5.Size = new System.Drawing.Size(41, 487);
             this.panel5.TabIndex = 15;
             // 
             // iconButton2
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.Sienna;
+            this.iconButton2.BackColor = System.Drawing.Color.DimGray;
             this.iconButton2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
+            this.iconButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumVioletRed;
             this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton2.Font = new System.Drawing.Font("Flames", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -239,7 +219,7 @@
             this.iconButton2.IconSize = 35;
             this.iconButton2.Location = new System.Drawing.Point(0, 0);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(36, 443);
+            this.iconButton2.Size = new System.Drawing.Size(41, 487);
             this.iconButton2.TabIndex = 21;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton2.UseVisualStyleBackColor = false;
@@ -252,9 +232,6 @@
             this.ClientSize = new System.Drawing.Size(653, 487);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "REGISTRO_PLACAS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -284,9 +261,6 @@
         private System.Windows.Forms.TextBox txt_mes;
         private System.Windows.Forms.TextBox txt_placas;
         private System.Windows.Forms.TextBox txt_id_integrante;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private FontAwesome.Sharp.IconButton iconButton2;
         private System.Windows.Forms.PictureBox pictureBox1;

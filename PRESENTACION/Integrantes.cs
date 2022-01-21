@@ -92,10 +92,7 @@ namespace PRESENTACION
             Grafañointegrant();      
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.Restart();         
-        }
+     
         #region IMPLEMENTACIÓN SINGLENTON
         private static Integrantes _Abrir;
         public static Integrantes Abrir
