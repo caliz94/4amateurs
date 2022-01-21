@@ -45,30 +45,31 @@
             this.pnl_der = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
-            this.pnl_izq.SuspendLayout();
             this.pnl_sup.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.menuStrip1.AllowDrop = true;
             this.menuStrip1.BackColor = System.Drawing.Color.Sienna;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuStrip1.Font = new System.Drawing.Font("Insomnia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.iNTEGRANTESDECLANToolStripMenuItem,
             this.pARTICIPACIONESDESALASToolStripMenuItem,
             this.rEGISTRODEPLACASToolStripMenuItem,
             this.estadisticasToolStripMenuItem1});
-            this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.menuStrip1.Location = new System.Drawing.Point(3, 29);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(254, 214);
+            this.menuStrip1.Size = new System.Drawing.Size(866, 57);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // iNTEGRANTESDECLANToolStripMenuItem
             // 
+            this.iNTEGRANTESDECLANToolStripMenuItem.AutoToolTip = true;
             this.iNTEGRANTESDECLANToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eSTADISTICASToolStripMenuItem,
             this.aDMINISTRARToolStripMenuItem});
@@ -79,7 +80,7 @@
             this.iNTEGRANTESDECLANToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.iNTEGRANTESDECLANToolStripMenuItem.Name = "iNTEGRANTESDECLANToolStripMenuItem";
             this.iNTEGRANTESDECLANToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.iNTEGRANTESDECLANToolStripMenuItem.Size = new System.Drawing.Size(247, 52);
+            this.iNTEGRANTESDECLANToolStripMenuItem.Size = new System.Drawing.Size(223, 53);
             this.iNTEGRANTESDECLANToolStripMenuItem.Text = "INTEGRANTES DE CLAN";
             // 
             // eSTADISTICASToolStripMenuItem
@@ -166,39 +167,39 @@
             // pnl_izq
             // 
             this.pnl_izq.BackColor = System.Drawing.Color.Sienna;
-            this.pnl_izq.Controls.Add(this.menuStrip1);
             this.pnl_izq.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_izq.Location = new System.Drawing.Point(12, 34);
+            this.pnl_izq.Location = new System.Drawing.Point(12, 57);
             this.pnl_izq.Name = "pnl_izq";
-            this.pnl_izq.Size = new System.Drawing.Size(266, 348);
+            this.pnl_izq.Size = new System.Drawing.Size(266, 310);
             this.pnl_izq.TabIndex = 1;
             // 
             // pnl_cont
             // 
             this.pnl_cont.BackColor = System.Drawing.Color.Sienna;
             this.pnl_cont.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_cont.Location = new System.Drawing.Point(278, 34);
+            this.pnl_cont.Location = new System.Drawing.Point(278, 57);
             this.pnl_cont.Name = "pnl_cont";
-            this.pnl_cont.Size = new System.Drawing.Size(471, 348);
+            this.pnl_cont.Size = new System.Drawing.Size(630, 310);
             this.pnl_cont.TabIndex = 2;
             // 
             // pnl_inf
             // 
             this.pnl_inf.BackColor = System.Drawing.Color.Chocolate;
             this.pnl_inf.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_inf.Location = new System.Drawing.Point(0, 382);
+            this.pnl_inf.Location = new System.Drawing.Point(0, 367);
             this.pnl_inf.Name = "pnl_inf";
-            this.pnl_inf.Size = new System.Drawing.Size(759, 10);
+            this.pnl_inf.Size = new System.Drawing.Size(918, 10);
             this.pnl_inf.TabIndex = 3;
             // 
             // pnl_sup
             // 
             this.pnl_sup.BackColor = System.Drawing.Color.Chocolate;
+            this.pnl_sup.Controls.Add(this.menuStrip1);
             this.pnl_sup.Controls.Add(this.iconButton1);
             this.pnl_sup.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_sup.Location = new System.Drawing.Point(0, 0);
             this.pnl_sup.Name = "pnl_sup";
-            this.pnl_sup.Size = new System.Drawing.Size(759, 34);
+            this.pnl_sup.Size = new System.Drawing.Size(918, 57);
             this.pnl_sup.TabIndex = 4;
             // 
             // iconButton1
@@ -213,9 +214,9 @@
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 30;
-            this.iconButton1.Location = new System.Drawing.Point(707, 0);
+            this.iconButton1.Location = new System.Drawing.Point(866, 0);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(52, 34);
+            this.iconButton1.Size = new System.Drawing.Size(52, 57);
             this.iconButton1.TabIndex = 20;
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton1.UseVisualStyleBackColor = true;
@@ -225,18 +226,18 @@
             // 
             this.pnl_der.BackColor = System.Drawing.Color.Chocolate;
             this.pnl_der.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_der.Location = new System.Drawing.Point(749, 34);
+            this.pnl_der.Location = new System.Drawing.Point(908, 57);
             this.pnl_der.Name = "pnl_der";
-            this.pnl_der.Size = new System.Drawing.Size(10, 348);
+            this.pnl_der.Size = new System.Drawing.Size(10, 310);
             this.pnl_der.TabIndex = 5;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Chocolate;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 34);
+            this.panel1.Location = new System.Drawing.Point(0, 57);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(12, 348);
+            this.panel1.Size = new System.Drawing.Size(12, 310);
             this.panel1.TabIndex = 1;
             // 
             // CP_CONTENEDOR
@@ -244,7 +245,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(759, 392);
+            this.ClientSize = new System.Drawing.Size(918, 377);
             this.Controls.Add(this.pnl_cont);
             this.Controls.Add(this.pnl_izq);
             this.Controls.Add(this.panel1);
@@ -260,9 +261,8 @@
             this.Load += new System.EventHandler(this.CP_CONTENEDOR_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.pnl_izq.ResumeLayout(false);
-            this.pnl_izq.PerformLayout();
             this.pnl_sup.ResumeLayout(false);
+            this.pnl_sup.PerformLayout();
             this.ResumeLayout(false);
 
         }
