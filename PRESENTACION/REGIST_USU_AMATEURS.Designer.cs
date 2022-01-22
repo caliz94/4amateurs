@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgv_usuarios = new System.Windows.Forms.DataGridView();
             this.BTN_ELIMINAR = new FontAwesome.Sharp.IconButton();
             this.BTN_EDITAR = new FontAwesome.Sharp.IconButton();
@@ -46,11 +47,14 @@
             this.txt_fecha_ingreso = new System.Windows.Forms.TextBox();
             this.txt_pais = new System.Windows.Forms.TextBox();
             this.txt_usuario = new System.Windows.Forms.TextBox();
-            this.txt_id_integrante = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_usuarios
@@ -66,17 +70,18 @@
             // BTN_ELIMINAR
             // 
             this.BTN_ELIMINAR.FlatAppearance.BorderSize = 0;
-            this.BTN_ELIMINAR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
-            this.BTN_ELIMINAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BTN_ELIMINAR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.BTN_ELIMINAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.BTN_ELIMINAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_ELIMINAR.Font = new System.Drawing.Font("Flames", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_ELIMINAR.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.BTN_ELIMINAR.IconColor = System.Drawing.Color.Green;
+            this.BTN_ELIMINAR.ForeColor = System.Drawing.Color.Red;
+            this.BTN_ELIMINAR.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.BTN_ELIMINAR.IconColor = System.Drawing.Color.Red;
             this.BTN_ELIMINAR.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BTN_ELIMINAR.IconSize = 35;
-            this.BTN_ELIMINAR.Location = new System.Drawing.Point(105, 7);
+            this.BTN_ELIMINAR.Location = new System.Drawing.Point(165, 16);
             this.BTN_ELIMINAR.Name = "BTN_ELIMINAR";
-            this.BTN_ELIMINAR.Size = new System.Drawing.Size(92, 51);
+            this.BTN_ELIMINAR.Size = new System.Drawing.Size(144, 55);
             this.BTN_ELIMINAR.TabIndex = 21;
             this.BTN_ELIMINAR.Text = "ELIMINAR";
             this.BTN_ELIMINAR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -86,17 +91,18 @@
             // BTN_EDITAR
             // 
             this.BTN_EDITAR.FlatAppearance.BorderSize = 0;
-            this.BTN_EDITAR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
-            this.BTN_EDITAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BTN_EDITAR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumSpringGreen;
+            this.BTN_EDITAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.BTN_EDITAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_EDITAR.Font = new System.Drawing.Font("Flames", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_EDITAR.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.BTN_EDITAR.ForeColor = System.Drawing.Color.Green;
+            this.BTN_EDITAR.IconChar = FontAwesome.Sharp.IconChar.Edit;
             this.BTN_EDITAR.IconColor = System.Drawing.Color.Green;
             this.BTN_EDITAR.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BTN_EDITAR.IconSize = 35;
-            this.BTN_EDITAR.Location = new System.Drawing.Point(7, 7);
+            this.BTN_EDITAR.Location = new System.Drawing.Point(15, 16);
             this.BTN_EDITAR.Name = "BTN_EDITAR";
-            this.BTN_EDITAR.Size = new System.Drawing.Size(92, 51);
+            this.BTN_EDITAR.Size = new System.Drawing.Size(144, 55);
             this.BTN_EDITAR.TabIndex = 22;
             this.BTN_EDITAR.Text = "EDITAR";
             this.BTN_EDITAR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -137,14 +143,14 @@
             this.panel2.Controls.Add(this.BTN_EDITAR);
             this.panel2.Controls.Add(this.BTN_ELIMINAR);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(890, 0);
+            this.panel2.Location = new System.Drawing.Point(821, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(454, 94);
+            this.panel2.Size = new System.Drawing.Size(523, 94);
             this.panel2.TabIndex = 23;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.txt_id_integrante);
+            this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.BTN_GUARDAR);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
@@ -165,17 +171,18 @@
             // BTN_GUARDAR
             // 
             this.BTN_GUARDAR.FlatAppearance.BorderSize = 0;
-            this.BTN_GUARDAR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
-            this.BTN_GUARDAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BTN_GUARDAR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BTN_GUARDAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BTN_GUARDAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_GUARDAR.Font = new System.Drawing.Font("Flames", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_GUARDAR.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.BTN_GUARDAR.ForeColor = System.Drawing.Color.Green;
+            this.BTN_GUARDAR.IconChar = FontAwesome.Sharp.IconChar.Save;
             this.BTN_GUARDAR.IconColor = System.Drawing.Color.Green;
             this.BTN_GUARDAR.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BTN_GUARDAR.IconSize = 35;
-            this.BTN_GUARDAR.Location = new System.Drawing.Point(218, 254);
+            this.BTN_GUARDAR.Location = new System.Drawing.Point(252, 279);
             this.BTN_GUARDAR.Name = "BTN_GUARDAR";
-            this.BTN_GUARDAR.Size = new System.Drawing.Size(150, 51);
+            this.BTN_GUARDAR.Size = new System.Drawing.Size(176, 72);
             this.BTN_GUARDAR.TabIndex = 33;
             this.BTN_GUARDAR.Text = "Guardar";
             this.BTN_GUARDAR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -187,7 +194,7 @@
             this.label5.AutoSize = true;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(53, 132);
+            this.label5.Location = new System.Drawing.Point(87, 130);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 16);
             this.label5.TabIndex = 30;
@@ -198,7 +205,7 @@
             this.label4.AutoSize = true;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(53, 101);
+            this.label4.Location = new System.Drawing.Point(87, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 16);
             this.label4.TabIndex = 29;
@@ -209,7 +216,7 @@
             this.label3.AutoSize = true;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(53, 169);
+            this.label3.Location = new System.Drawing.Point(87, 167);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(152, 16);
             this.label3.TabIndex = 28;
@@ -220,7 +227,7 @@
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(53, 209);
+            this.label2.Location = new System.Drawing.Point(87, 207);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 16);
             this.label2.TabIndex = 27;
@@ -231,7 +238,7 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(53, 66);
+            this.label1.Location = new System.Drawing.Point(87, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 16);
             this.label1.TabIndex = 26;
@@ -240,50 +247,56 @@
             // txt_celular
             // 
             this.txt_celular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_celular.Location = new System.Drawing.Point(218, 101);
+            this.txt_celular.Location = new System.Drawing.Point(252, 99);
             this.txt_celular.Name = "txt_celular";
-            this.txt_celular.Size = new System.Drawing.Size(150, 26);
+            this.txt_celular.Size = new System.Drawing.Size(176, 26);
             this.txt_celular.TabIndex = 25;
             // 
             // txt_comentario
             // 
             this.txt_comentario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_comentario.Location = new System.Drawing.Point(218, 209);
+            this.txt_comentario.Location = new System.Drawing.Point(252, 207);
+            this.txt_comentario.Multiline = true;
             this.txt_comentario.Name = "txt_comentario";
-            this.txt_comentario.Size = new System.Drawing.Size(150, 26);
+            this.txt_comentario.Size = new System.Drawing.Size(176, 55);
             this.txt_comentario.TabIndex = 24;
             // 
             // txt_fecha_ingreso
             // 
             this.txt_fecha_ingreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_fecha_ingreso.Location = new System.Drawing.Point(218, 169);
+            this.txt_fecha_ingreso.Location = new System.Drawing.Point(252, 167);
             this.txt_fecha_ingreso.Name = "txt_fecha_ingreso";
-            this.txt_fecha_ingreso.Size = new System.Drawing.Size(150, 26);
+            this.txt_fecha_ingreso.Size = new System.Drawing.Size(176, 26);
             this.txt_fecha_ingreso.TabIndex = 23;
             // 
             // txt_pais
             // 
             this.txt_pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pais.Location = new System.Drawing.Point(218, 135);
+            this.txt_pais.Location = new System.Drawing.Point(252, 133);
             this.txt_pais.Name = "txt_pais";
-            this.txt_pais.Size = new System.Drawing.Size(150, 26);
+            this.txt_pais.Size = new System.Drawing.Size(176, 26);
             this.txt_pais.TabIndex = 21;
             // 
             // txt_usuario
             // 
             this.txt_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_usuario.Location = new System.Drawing.Point(218, 62);
+            this.txt_usuario.Location = new System.Drawing.Point(252, 60);
             this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(150, 26);
+            this.txt_usuario.Size = new System.Drawing.Size(176, 26);
             this.txt_usuario.TabIndex = 20;
             // 
-            // txt_id_integrante
+            // errorProvider1
             // 
-            this.txt_id_integrante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_id_integrante.Location = new System.Drawing.Point(218, 30);
-            this.txt_id_integrante.Name = "txt_id_integrante";
-            this.txt_id_integrante.Size = new System.Drawing.Size(150, 26);
-            this.txt_id_integrante.TabIndex = 34;
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pictureBox1.Location = new System.Drawing.Point(56, 367);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(372, 288);
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
             // 
             // REGIST_USU_AMATEURS
             // 
@@ -308,6 +321,8 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -331,6 +346,7 @@
         private System.Windows.Forms.TextBox txt_fecha_ingreso;
         private System.Windows.Forms.TextBox txt_pais;
         private System.Windows.Forms.TextBox txt_usuario;
-        private System.Windows.Forms.TextBox txt_id_integrante;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
