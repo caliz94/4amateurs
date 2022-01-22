@@ -86,7 +86,8 @@ namespace PRESENTACION
 
         public void mostrar()
         {
-            dgv_usuarios.DataSource = INTEGRANTES_CN.mostar_integ();
+            CN_INTEGRANTES INTEGRANTES_CNeg = new CN_INTEGRANTES();
+            dgv_usuarios.DataSource = INTEGRANTES_CNeg.mostar_integ();
         }
 
         private void REGIST_USU_AMATEURS_Load(object sender, EventArgs e)

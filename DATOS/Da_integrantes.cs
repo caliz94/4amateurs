@@ -77,7 +77,7 @@ namespace DATOS
 
             cargar_usuarios = cmd.ExecuteReader();
             usuarios.Load(cargar_usuarios);
-                       
+            cmd.Parameters.Clear();
             cadena.CERRAR_SERVER();
             return usuarios;
         }
@@ -96,7 +96,7 @@ namespace DATOS
 
             leer = cmd.ExecuteReader();
             tabla_integrantes.Load(leer);
-           
+            cmd.Parameters.Clear();
             cadena.CERRAR_SERVER();
             return tabla_integrantes;
         }
