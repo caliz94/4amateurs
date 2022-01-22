@@ -46,6 +46,7 @@
             this.txt_fecha_ingreso = new System.Windows.Forms.TextBox();
             this.txt_pais = new System.Windows.Forms.TextBox();
             this.txt_usuario = new System.Windows.Forms.TextBox();
+            this.txt_id_integrante = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -80,6 +81,7 @@
             this.BTN_ELIMINAR.Text = "ELIMINAR";
             this.BTN_ELIMINAR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BTN_ELIMINAR.UseVisualStyleBackColor = true;
+            this.BTN_ELIMINAR.Click += new System.EventHandler(this.BTN_ELIMINAR_Click);
             // 
             // BTN_EDITAR
             // 
@@ -142,6 +144,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.txt_id_integrante);
             this.panel3.Controls.Add(this.BTN_GUARDAR);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
@@ -174,7 +177,7 @@
             this.BTN_GUARDAR.Name = "BTN_GUARDAR";
             this.BTN_GUARDAR.Size = new System.Drawing.Size(150, 51);
             this.BTN_GUARDAR.TabIndex = 33;
-            this.BTN_GUARDAR.Text = "AGREGAR";
+            this.BTN_GUARDAR.Text = "Guardar";
             this.BTN_GUARDAR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BTN_GUARDAR.UseVisualStyleBackColor = true;
             this.BTN_GUARDAR.Click += new System.EventHandler(this.iconButton1_Click);
@@ -274,6 +277,14 @@
             this.txt_usuario.Size = new System.Drawing.Size(150, 26);
             this.txt_usuario.TabIndex = 20;
             // 
+            // txt_id_integrante
+            // 
+            this.txt_id_integrante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_id_integrante.Location = new System.Drawing.Point(218, 30);
+            this.txt_id_integrante.Name = "txt_id_integrante";
+            this.txt_id_integrante.Size = new System.Drawing.Size(150, 26);
+            this.txt_id_integrante.TabIndex = 34;
+            // 
             // REGIST_USU_AMATEURS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,5 +331,6 @@
         private System.Windows.Forms.TextBox txt_fecha_ingreso;
         private System.Windows.Forms.TextBox txt_pais;
         private System.Windows.Forms.TextBox txt_usuario;
+        private System.Windows.Forms.TextBox txt_id_integrante;
     }
 }

@@ -33,34 +33,51 @@ namespace DATOS
 
         //editar usuarios
 
-        private void editar(int ID_INTEGRANTE, string USUARIO, string CELULAR, string PAIS_NACIONALIDAD, DateTime FECHA_INGRESO, string COMENTARIO, string ESTADO)
+        public void editar(int ID_INTEGRANTE, string USUARIO, string CELULAR, string PAIS_NACIONALIDAD, DateTime FECHA_INGRESO, string COMENTARIO)
         {
             cmd.Connection = cadena.ABRIR_SERVER();
             cmd.CommandText = "editar_usuario";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@ID_INTEGRANTE", ID_INTEGRANTE);
+            cmd.Parameters.AddWithValue("@USUARIO", USUARIO);
+            cmd.Parameters.AddWithValue("@CELULAR", CELULAR);
+            cmd.Parameters.AddWithValue("@PAIS_NACIONALIDAD", PAIS_NACIONALIDAD);
+            cmd.Parameters.AddWithValue("@FECHA_INGRESO", FECHA_INGRESO);
+            cmd.Parameters.AddWithValue("@COMENTARIO", COMENTARIO);
+            cmd.ExecuteNonQuery();
+            cmd.Parameters.Clear();
+            cadena.CERRAR_SERVER();
         }
 
         //ELIMINAR usuarios
 
-        private void eliminar(int ID_INTEGRANTE)
+        public void eliminar(int ID_INTEGRANTE)
         {
             cmd.Connection = cadena.ABRIR_SERVER();
             cmd.CommandText = "eliminar_usuario";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@ID_INTEGRANTE", ID_INTEGRANTE);           
+            cmd.ExecuteNonQuery();
+            cmd.Parameters.Clear();
+            cadena.CERRAR_SERVER();
+
         }
 
 
         //ver usuarios
-
-        public DataTable usuarios = new DataTable();
         SqlDataReader cargar_usuarios;
-
+        DataTable usuarios = new DataTable();
+      
         public DataTable ver_usuarios()
         {
+            
             cmd.Connection = cadena.ABRIR_SERVER();
             cmd.CommandText = "verusuarios";
             cmd.CommandType = CommandType.StoredProcedure;
-            cargar_usuarios = cmd.ExecuteReader();
 
+            cargar_usuarios = cmd.ExecuteReader();
             usuarios.Load(cargar_usuarios);
+                       
             cadena.CERRAR_SERVER();
             return usuarios;
         }
@@ -71,6 +88,7 @@ namespace DATOS
 
         public DataTable mostrar_integrantes()
         {
+            cmd.Parameters.Clear();
             //tabla_integrantes.Clear();
             cmd.Connection = cadena.ABRIR_SERVER();
             cmd.CommandText = "sp_MostrarIntegrantes";
@@ -78,6 +96,7 @@ namespace DATOS
 
             leer = cmd.ExecuteReader();
             tabla_integrantes.Load(leer);
+           
             cadena.CERRAR_SERVER();
             return tabla_integrantes;
         }

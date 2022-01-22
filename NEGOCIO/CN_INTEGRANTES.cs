@@ -18,8 +18,20 @@ namespace NEGOCIO
         {
             integrantes_CD.insertar(USUARIO, CELULAR, PAIS_NACIONALIDAD, FECHA_INGRESO, COMENTARIO/*, ESTADO*/);
         }
-                
-       public DataTable mostar_integ()
+
+        //metodo para editar integrante
+        public void editar_integrante(int ID_INTEGRANTE, string USUARIO, string CELULAR, string PAIS_NACIONALIDAD, DateTime FECHA_INGRESO, string COMENTARIO)
+        {
+            integrantes_CD.editar(ID_INTEGRANTE,USUARIO, CELULAR, PAIS_NACIONALIDAD, FECHA_INGRESO, COMENTARIO);
+        }
+
+        //metodo para eliminar integrante
+        public void eliminar_integrante(int ID_INTEGRANTE)
+        {
+            integrantes_CD.eliminar(ID_INTEGRANTE);
+        }
+
+        public DataTable mostar_integ()
        {
            DataTable tabla = new DataTable();
            tabla = integrantes_CD.ver_usuarios();
