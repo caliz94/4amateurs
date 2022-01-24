@@ -118,12 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="series2.CustomProperties" xml:space="preserve">
-    <value>PieLineColor=Transparent, CollectedSliceExploded=True, DoughnutRadius=20, CollectedColor=Black, 3DLabelLineSize=120, PieDrawingStyle=Concave, PieLabelStyle=Outside, PieStartAngle=285, CollectedThreshold=1, LabelsRadialLineSize=2, CollectedLabel=1</value>
-  </data>
-  <data name="series3.CustomProperties" xml:space="preserve">
-    <value>PieLineColor=Transparent, CollectedSliceExploded=True, DoughnutRadius=20, CollectedColor=Black, PieDrawingStyle=Concave, LabelsRadialLineSize=2, PieLabelStyle=Outside, PieStartAngle=285, CollectedThreshold=1, 3DLabelLineSize=120, CollectedLabel=1</value>
+    <value>PieLineColor=Blue, CollectedSliceExploded=True, DoughnutRadius=20, CollectedColor=Black, PieDrawingStyle=Concave, PieLabelStyle=Outside, PieStartAngle=250, CollectedThreshold=1, 3DLabelLineSize=120, CollectedLabel=1</value>
   </data>
   <data name="series4.CustomProperties" xml:space="preserve">
-    <value>PieLineColor=Transparent, CollectedSliceExploded=True, DoughnutRadius=20, CollectedColor=Black, PieDrawingStyle=Concave, LabelsRadialLineSize=2, PieLabelStyle=Outside, PieStartAngle=285, CollectedThreshold=1, 3DLabelLineSize=120, CollectedLabel=1</value>
+    <value>PieLineColor=Lime, CollectedSliceExploded=True, DoughnutRadius=20, CollectedColor=Black, PieDrawingStyle=Concave, PieLabelStyle=Outside, PieStartAngle=250, CollectedThreshold=1, 3DLabelLineSize=120, CollectedLabel=1</value>
   </data>
 </root>

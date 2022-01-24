@@ -19,6 +19,28 @@ namespace PRESENTACION
         {
             InitializeComponent();
         }
+
+        #region IMPLEMENTACIÓN SINGLENTON
+        private static Integrantes _Abrir;
+        public static Integrantes Abrir
+        {
+            get
+            {
+                if (_Abrir == null)
+                    _Abrir = new Integrantes();
+                return _Abrir;
+            }
+        }
+        private void Integrantes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _Abrir = null;
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        #endregion
         CN_INTEGRANTES Integrantes_cn = new CN_INTEGRANTES();
         private void mostrarIntegrantes()
         {
@@ -28,13 +50,13 @@ namespace PRESENTACION
         {
             mostrarIntegrantes();
         }
-        //graficas
+       
         //CADENA CON EL SERVIDOR DE BASE DE DATOS
         private SqlConnection Conexion = new SqlConnection("Server=.;database=AMATEURS;INTEGRATED SECURITY=TRUE");
-
         SqlCommand cmd;
         SqlDataReader dr;
 
+        #region graficas
         //grafica de las placas al oño del integranmte x
         ArrayList total = new ArrayList();
         ArrayList mes = new ArrayList();
@@ -81,9 +103,9 @@ namespace PRESENTACION
                 Conexion.Close();                
         }
 
-        //grafica de las placas al oño del integranmte x
+      
         ArrayList totalplacas = new ArrayList();
-        //ArrayList mes = new ArrayList();
+      
         private void tt_placas()
         {
             totalplacas.Clear();
@@ -95,14 +117,35 @@ namespace PRESENTACION
             dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                totalplacas.Add(dr.GetInt32(0));
-                //total.Add(dr.GetInt32(0));
+                totalplacas.Add(dr.GetInt32(0));               
             }
             chart3.Series[0].Points.DataBindY(totalplacas);
             dr.Close();
             cmd.Parameters.Clear();
             Conexion.Close();
         }
+        //PROMEDIO
+        ArrayList PROMEDIOX = new ArrayList();       
+        private void PM_placas()
+        {
+            PROMEDIOX.Clear();
+            cmd = new SqlCommand("pm_placas", Conexion);
+            cmd.Parameters.AddWithValue("@id_integrante", txt_idUsuario.Text);
+            cmd.CommandType = CommandType.StoredProcedure;
+            Conexion.Open();
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                PROMEDIOX.Add(dr.GetInt32(0));                
+            }
+            chart4.Series[0].Points.DataBindY(PROMEDIOX);
+            dr.Close();
+            cmd.Parameters.Clear();
+            Conexion.Close();
+        }        
+
+        #endregion
+
 
         private void dgv_integrantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -114,29 +157,13 @@ namespace PRESENTACION
             GrafCategorias();
             Grafañointegrant();
             tt_placas();
+            PM_placas();
+            label1.Visible = true;
+            label2.Visible = true;
+            label3.Visible = true;
         }
-
      
-        #region IMPLEMENTACIÓN SINGLENTON
-        private static Integrantes _Abrir;
-        public static Integrantes Abrir
-        {
-            get
-            {
-                if (_Abrir == null)
-                    _Abrir = new Integrantes();
-                return _Abrir;
-            }
-        }
-        private void Integrantes_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            _Abrir = null;
-        }
-        #endregion
+     
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }
