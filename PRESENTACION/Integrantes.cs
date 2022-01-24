@@ -81,6 +81,29 @@ namespace PRESENTACION
                 Conexion.Close();                
         }
 
+        //grafica de las placas al oño del integranmte x
+        ArrayList totalplacas = new ArrayList();
+        //ArrayList mes = new ArrayList();
+        private void tt_placas()
+        {
+            totalplacas.Clear();
+            //mes.Clear();
+            cmd = new SqlCommand("tt_placas", Conexion);
+            cmd.Parameters.AddWithValue("@id_integrante", txt_idUsuario.Text);
+            cmd.CommandType = CommandType.StoredProcedure;
+            Conexion.Open();
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                totalplacas.Add(dr.GetInt32(0));
+                //total.Add(dr.GetInt32(0));
+            }
+            chart3.Series[0].Points.DataBindY(totalplacas);
+            dr.Close();
+            cmd.Parameters.Clear();
+            Conexion.Close();
+        }
+
         private void dgv_integrantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_idUsuario.Text = dgv_integrantes.CurrentRow.Cells["ID_INTEGRANTE"].Value.ToString();          
@@ -89,7 +112,8 @@ namespace PRESENTACION
         private void txt_idUsuario_TextChanged(object sender, EventArgs e)
         {
             GrafCategorias();
-            Grafañointegrant();      
+            Grafañointegrant();
+            tt_placas();
         }
 
      
