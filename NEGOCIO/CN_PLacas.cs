@@ -14,10 +14,15 @@ namespace NEGOCIO
         private Cd_Placas placas_cd = new Cd_Placas();
 
         //metodo para insertar integrante
-        public void insertar_placas(int ID_INTEGRANTE, int R_PLACAS, string MES, string SEMANA)
+        public void insertar_placas(int ID_INTEGRANTE, string MES, string SEMANA, int R_PLACAS)
         {
-            placas_cd.insertar(ID_INTEGRANTE, R_PLACAS, MES, SEMANA);
+            placas_cd.insertar(ID_INTEGRANTE, MES, SEMANA, R_PLACAS);
         }
-
+        public DataTable dt_MostrarIntegrantes()
+        {
+            DataTable dt = new DataTable();
+            dt = placas_cd.dt_MostrarIntegrantes();
+            return dt;
+        }
     }
 }

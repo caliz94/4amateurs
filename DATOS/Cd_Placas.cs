@@ -16,18 +16,34 @@ namespace DATOS
 
 
         //metodo para insertar
-        public void insertar(int ID_INTEGRANTE, int R_PLACAS, string MES, string SEMANA)
+        public void insertar(int ID_INTEGRANTE, string MES,string SEMANA, int R_PLACAS)
         {
             cmd.Connection = cadena.ABRIR_SERVER();
             cmd.CommandText = "sp_reg_placas";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@ID_INTEGRANTE", ID_INTEGRANTE);
-            cmd.Parameters.AddWithValue("@R_PLACAS", R_PLACAS);
+            cmd.Parameters.AddWithValue("@ID_INTEGRANTE", ID_INTEGRANTE);           
             cmd.Parameters.AddWithValue("@MES", MES);
             cmd.Parameters.AddWithValue("@SEMANA", SEMANA);
+            cmd.Parameters.AddWithValue("@R_PLACAS", R_PLACAS);
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
             cadena.CERRAR_SERVER();
+        }
+
+        SqlDataReader integrantes;
+        DataTable dt_integrantes = new DataTable();
+
+        public DataTable dt_MostrarIntegrantes()
+        {
+            cmd.Connection = cadena.ABRIR_SERVER();
+            cmd.CommandText = "sp_MostrarIntegrantes";
+            cmd.CommandType = CommandType.StoredProcedure;          
+
+            integrantes=  cmd.ExecuteReader();
+            dt_integrantes.Load(integrantes);
+            cmd.Parameters.Clear();
+            cadena.CERRAR_SERVER();
+            return dt_integrantes;
         }
     }
 }

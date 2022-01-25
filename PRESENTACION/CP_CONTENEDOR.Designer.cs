@@ -175,7 +175,7 @@
             // 
             // pnl_cont
             // 
-            this.pnl_cont.BackColor = System.Drawing.Color.Sienna;
+            this.pnl_cont.BackColor = System.Drawing.Color.White;
             this.pnl_cont.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_cont.Location = new System.Drawing.Point(90, 57);
             this.pnl_cont.Name = "pnl_cont";

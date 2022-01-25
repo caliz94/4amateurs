@@ -112,3 +112,4 @@ as
 select * from integrantes
 go
 
+select month(getdate())

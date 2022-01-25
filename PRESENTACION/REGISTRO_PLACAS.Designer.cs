@@ -28,46 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.components = new System.ComponentModel.Container();
+            this.txt_fecha = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgv_integrantes = new System.Windows.Forms.DataGridView();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_nombre = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_semana = new System.Windows.Forms.TextBox();
             this.txt_mes = new System.Windows.Forms.TextBox();
-            this.txt_placas = new System.Windows.Forms.TextBox();
+            this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.txt_id_integrante = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txt_placas = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dgv_fechas = new System.Windows.Forms.DataGridView();
+            this.txt_fecha.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_integrantes)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_fechas)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // txt_fecha
             // 
-            this.panel1.BackColor = System.Drawing.Color.DimGray;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.dgv_integrantes);
-            this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txt_semana);
-            this.panel1.Controls.Add(this.txt_mes);
-            this.panel1.Controls.Add(this.txt_placas);
-            this.panel1.Controls.Add(this.txt_id_integrante);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(990, 487);
-            this.panel1.TabIndex = 11;
+            this.txt_fecha.BackColor = System.Drawing.Color.DimGray;
+            this.txt_fecha.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_fecha.Controls.Add(this.dgv_fechas);
+            this.txt_fecha.Controls.Add(this.label2);
+            this.txt_fecha.Controls.Add(this.txt_placas);
+            this.txt_fecha.Controls.Add(this.pictureBox1);
+            this.txt_fecha.Controls.Add(this.dgv_integrantes);
+            this.txt_fecha.Controls.Add(this.iconButton1);
+            this.txt_fecha.Controls.Add(this.label4);
+            this.txt_fecha.Controls.Add(this.label3);
+            this.txt_fecha.Controls.Add(this.lbl_nombre);
+            this.txt_fecha.Controls.Add(this.label1);
+            this.txt_fecha.Controls.Add(this.txt_semana);
+            this.txt_fecha.Controls.Add(this.txt_mes);
+            this.txt_fecha.Controls.Add(this.txt_Nombre);
+            this.txt_fecha.Controls.Add(this.txt_id_integrante);
+            this.txt_fecha.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_fecha.Location = new System.Drawing.Point(0, 0);
+            this.txt_fecha.Name = "txt_fecha";
+            this.txt_fecha.Size = new System.Drawing.Size(990, 487);
+            this.txt_fecha.TabIndex = 11;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.DimGray;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Location = new System.Drawing.Point(800, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(186, 483);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
             // 
             // dgv_integrantes
             // 
@@ -76,8 +96,9 @@
             this.dgv_integrantes.Dock = System.Windows.Forms.DockStyle.Left;
             this.dgv_integrantes.Location = new System.Drawing.Point(0, 0);
             this.dgv_integrantes.Name = "dgv_integrantes";
-            this.dgv_integrantes.Size = new System.Drawing.Size(185, 483);
+            this.dgv_integrantes.Size = new System.Drawing.Size(196, 483);
             this.dgv_integrantes.TabIndex = 20;
+            this.dgv_integrantes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_integrantes_CellClick);
             // 
             // iconButton1
             // 
@@ -92,13 +113,14 @@
             this.iconButton1.IconColor = System.Drawing.Color.Green;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 35;
-            this.iconButton1.Location = new System.Drawing.Point(202, 317);
+            this.iconButton1.Location = new System.Drawing.Point(216, 397);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(181, 63);
             this.iconButton1.TabIndex = 19;
             this.iconButton1.Text = "AGREGAR";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // label4
             // 
@@ -106,7 +128,7 @@
             this.label4.BackColor = System.Drawing.Color.DimGray;
             this.label4.Font = new System.Drawing.Font("NSimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(220, 269);
+            this.label4.Location = new System.Drawing.Point(216, 269);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 19);
             this.label4.TabIndex = 18;
@@ -118,23 +140,23 @@
             this.label3.BackColor = System.Drawing.Color.DimGray;
             this.label3.Font = new System.Drawing.Font("NSimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(220, 195);
+            this.label3.Location = new System.Drawing.Point(216, 195);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 19);
             this.label3.TabIndex = 17;
             this.label3.Text = "MES";
             // 
-            // label2
+            // lbl_nombre
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.DimGray;
-            this.label2.Font = new System.Drawing.Font("NSimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(220, 116);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 19);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "PLACAS";
+            this.lbl_nombre.AutoSize = true;
+            this.lbl_nombre.BackColor = System.Drawing.Color.DimGray;
+            this.lbl_nombre.Font = new System.Drawing.Font("NSimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombre.ForeColor = System.Drawing.Color.White;
+            this.lbl_nombre.Location = new System.Drawing.Point(216, 116);
+            this.lbl_nombre.Name = "lbl_nombre";
+            this.lbl_nombre.Size = new System.Drawing.Size(75, 19);
+            this.lbl_nombre.TabIndex = 16;
+            this.lbl_nombre.Text = "NOMBRE";
             // 
             // label1
             // 
@@ -142,7 +164,7 @@
             this.label1.BackColor = System.Drawing.Color.DimGray;
             this.label1.Font = new System.Drawing.Font("NSimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(220, 44);
+            this.label1.Location = new System.Drawing.Point(216, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(196, 19);
             this.label1.TabIndex = 15;
@@ -152,36 +174,36 @@
             // 
             this.txt_semana.BackColor = System.Drawing.Color.White;
             this.txt_semana.ForeColor = System.Drawing.Color.OrangeRed;
-            this.txt_semana.Location = new System.Drawing.Point(220, 291);
+            this.txt_semana.Location = new System.Drawing.Point(216, 291);
             this.txt_semana.Name = "txt_semana";
-            this.txt_semana.Size = new System.Drawing.Size(139, 20);
+            this.txt_semana.Size = new System.Drawing.Size(196, 20);
             this.txt_semana.TabIndex = 14;
             // 
             // txt_mes
             // 
             this.txt_mes.BackColor = System.Drawing.Color.White;
             this.txt_mes.ForeColor = System.Drawing.Color.OrangeRed;
-            this.txt_mes.Location = new System.Drawing.Point(220, 214);
+            this.txt_mes.Location = new System.Drawing.Point(216, 214);
             this.txt_mes.Name = "txt_mes";
-            this.txt_mes.Size = new System.Drawing.Size(139, 20);
+            this.txt_mes.Size = new System.Drawing.Size(196, 20);
             this.txt_mes.TabIndex = 13;
             // 
-            // txt_placas
+            // txt_Nombre
             // 
-            this.txt_placas.BackColor = System.Drawing.Color.White;
-            this.txt_placas.ForeColor = System.Drawing.Color.OrangeRed;
-            this.txt_placas.Location = new System.Drawing.Point(220, 138);
-            this.txt_placas.Name = "txt_placas";
-            this.txt_placas.Size = new System.Drawing.Size(139, 20);
-            this.txt_placas.TabIndex = 12;
+            this.txt_Nombre.BackColor = System.Drawing.Color.White;
+            this.txt_Nombre.ForeColor = System.Drawing.Color.OrangeRed;
+            this.txt_Nombre.Location = new System.Drawing.Point(216, 138);
+            this.txt_Nombre.Name = "txt_Nombre";
+            this.txt_Nombre.Size = new System.Drawing.Size(196, 20);
+            this.txt_Nombre.TabIndex = 12;
             // 
             // txt_id_integrante
             // 
             this.txt_id_integrante.BackColor = System.Drawing.Color.White;
             this.txt_id_integrante.ForeColor = System.Drawing.Color.OrangeRed;
-            this.txt_id_integrante.Location = new System.Drawing.Point(220, 66);
+            this.txt_id_integrante.Location = new System.Drawing.Point(216, 66);
             this.txt_id_integrante.Name = "txt_id_integrante";
-            this.txt_id_integrante.Size = new System.Drawing.Size(139, 20);
+            this.txt_id_integrante.Size = new System.Drawing.Size(196, 20);
             this.txt_id_integrante.TabIndex = 11;
             // 
             // panel5
@@ -215,22 +237,46 @@
             this.iconButton2.UseVisualStyleBackColor = false;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
-            // pictureBox1
+            // errorProvider1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DimGray;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Location = new System.Drawing.Point(800, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 483);
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // txt_placas
+            // 
+            this.txt_placas.BackColor = System.Drawing.Color.White;
+            this.txt_placas.ForeColor = System.Drawing.Color.OrangeRed;
+            this.txt_placas.Location = new System.Drawing.Point(216, 371);
+            this.txt_placas.Name = "txt_placas";
+            this.txt_placas.Size = new System.Drawing.Size(196, 20);
+            this.txt_placas.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.DimGray;
+            this.label2.Font = new System.Drawing.Font("NSimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(216, 349);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 19);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "PLACAS";
+            // 
+            // dgv_fechas
+            // 
+            this.dgv_fechas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_fechas.Location = new System.Drawing.Point(202, 10);
+            this.dgv_fechas.Name = "dgv_fechas";
+            this.dgv_fechas.Size = new System.Drawing.Size(11, 10);
+            this.dgv_fechas.TabIndex = 24;
+            this.dgv_fechas.Visible = false;
             // 
             // REGISTRO_PLACAS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1031, 487);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txt_fecha);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "REGISTRO_PLACAS";
@@ -239,30 +285,36 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.REGISTRO_PLACAS_FormClosed);
             this.Load += new System.EventHandler(this.REGISTRO_PLACAS_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.txt_fecha.ResumeLayout(false);
+            this.txt_fecha.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_integrantes)).EndInit();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_fechas)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel txt_fecha;
         private System.Windows.Forms.DataGridView dgv_integrantes;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_nombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_semana;
         private System.Windows.Forms.TextBox txt_mes;
-        private System.Windows.Forms.TextBox txt_placas;
+        private System.Windows.Forms.TextBox txt_Nombre;
         private System.Windows.Forms.TextBox txt_id_integrante;
         private System.Windows.Forms.Panel panel5;
         private FontAwesome.Sharp.IconButton iconButton2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.TextBox txt_placas;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dgv_fechas;
     }
 }
