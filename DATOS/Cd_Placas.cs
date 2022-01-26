@@ -16,13 +16,12 @@ namespace DATOS
 
 
         //metodo para insertar
-        public void insertar(int ID_INTEGRANTE, string MES,string SEMANA, int R_PLACAS)
+        public void insertar(int ID_INTEGRANTE,string SEMANA, int R_PLACAS)
         {
             cmd.Connection = cadena.ABRIR_SERVER();
             cmd.CommandText = "sp_reg_placas";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@ID_INTEGRANTE", ID_INTEGRANTE);           
-            cmd.Parameters.AddWithValue("@MES", MES);
+            cmd.Parameters.AddWithValue("@ID_INTEGRANTE", ID_INTEGRANTE);                    
             cmd.Parameters.AddWithValue("@SEMANA", SEMANA);
             cmd.Parameters.AddWithValue("@R_PLACAS", R_PLACAS);
             cmd.ExecuteNonQuery();
