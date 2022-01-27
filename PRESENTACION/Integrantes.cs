@@ -57,7 +57,7 @@ namespace PRESENTACION
         SqlDataReader dr;
 
         #region graficas
-        //grafica de las placas al oño del integranmte x
+        //grafica de las placas al Año del integranmte x
         ArrayList total = new ArrayList();
         ArrayList mes = new ArrayList();
         private void Grafañointegrant()
@@ -149,11 +149,14 @@ namespace PRESENTACION
 
         private void dgv_integrantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_idUsuario.Text = dgv_integrantes.CurrentRow.Cells["ID_INTEGRANTE"].Value.ToString();          
+          
+                    
         }
+
 
         private void txt_idUsuario_TextChanged(object sender, EventArgs e)
         {
+            fotos();
             GrafCategorias();
             Grafañointegrant();
             tt_placas();
@@ -162,8 +165,47 @@ namespace PRESENTACION
             label2.Visible = true;
             label3.Visible = true;
         }
-     
-     
+
+        private void dgv_integrantes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txt_idUsuario.Text = dgv_integrantes.CurrentRow.Cells["ID_INTEGRANTE"].Value.ToString();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("no posee valores");
+            }
+        }
+
+        private void fotos()
+        {
+            if (txt_idUsuario.Text == "1")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.Amidory;
+            }
+            if (txt_idUsuario.Text == "2")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.caliz;
+            }
+            if (txt_idUsuario.Text == "3")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.dakotha;
+            }
+            if (txt_idUsuario.Text == "4")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.daniel;
+            }
+            if (txt_idUsuario.Text == "5")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.guayo;
+            }
+            if (txt_idUsuario.Text == "6")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.isa;
+            }
+        }
 
     }
 }

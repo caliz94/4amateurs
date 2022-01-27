@@ -44,5 +44,24 @@ namespace DATOS
             cadena.CERRAR_SERVER();
             return dt_integrantes;
         }
+
+        SqlDataReader integ;
+        DataTable dt_integ = new DataTable();
+
+        //ver las placas de los integrantes del mes al registrar
+        public DataTable dt_mostrar_placas_int(int ID_INTEGRANTE)
+        {
+            cmd.Connection = cadena.ABRIR_SERVER();
+            cmd.CommandText = "sp_ver_reg_placas_usuario";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@ID_INTEGRANTE", ID_INTEGRANTE);
+            integ = cmd.ExecuteReader();
+            dt_integrantes.Load(integ);
+            cmd.Parameters.Clear();
+            cadena.CERRAR_SERVER();
+            return dt_integrantes;
+           
+        }
+
     }
 }

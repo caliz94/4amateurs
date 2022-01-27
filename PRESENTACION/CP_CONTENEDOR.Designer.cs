@@ -37,13 +37,13 @@
             this.gANADORESToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.rEGISTRODEPLACASToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.estadisticasToolStripMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
-            this.pnl_izq = new System.Windows.Forms.Panel();
             this.pnl_cont = new System.Windows.Forms.Panel();
             this.pnl_inf = new System.Windows.Forms.Panel();
             this.pnl_sup = new System.Windows.Forms.Panel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.pnl_der = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnl_der = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.pnl_sup.SuspendLayout();
             this.SuspendLayout();
@@ -164,22 +164,13 @@
             this.estadisticasToolStripMenuItem1.Text = "estadisticas de clan";
             this.estadisticasToolStripMenuItem1.Click += new System.EventHandler(this.estadisticasToolStripMenuItem1_Click);
             // 
-            // pnl_izq
-            // 
-            this.pnl_izq.BackColor = System.Drawing.Color.Sienna;
-            this.pnl_izq.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_izq.Location = new System.Drawing.Point(12, 57);
-            this.pnl_izq.Name = "pnl_izq";
-            this.pnl_izq.Size = new System.Drawing.Size(78, 310);
-            this.pnl_izq.TabIndex = 1;
-            // 
             // pnl_cont
             // 
             this.pnl_cont.BackColor = System.Drawing.Color.White;
             this.pnl_cont.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_cont.Location = new System.Drawing.Point(90, 57);
+            this.pnl_cont.Location = new System.Drawing.Point(12, 67);
             this.pnl_cont.Name = "pnl_cont";
-            this.pnl_cont.Size = new System.Drawing.Size(818, 310);
+            this.pnl_cont.Size = new System.Drawing.Size(896, 300);
             this.pnl_cont.TabIndex = 2;
             // 
             // pnl_inf
@@ -222,15 +213,6 @@
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
-            // pnl_der
-            // 
-            this.pnl_der.BackColor = System.Drawing.Color.Chocolate;
-            this.pnl_der.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_der.Location = new System.Drawing.Point(908, 57);
-            this.pnl_der.Name = "pnl_der";
-            this.pnl_der.Size = new System.Drawing.Size(10, 310);
-            this.pnl_der.TabIndex = 5;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Chocolate;
@@ -240,6 +222,24 @@
             this.panel1.Size = new System.Drawing.Size(12, 310);
             this.panel1.TabIndex = 1;
             // 
+            // pnl_der
+            // 
+            this.pnl_der.BackColor = System.Drawing.Color.Chocolate;
+            this.pnl_der.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnl_der.Location = new System.Drawing.Point(908, 57);
+            this.pnl_der.Name = "pnl_der";
+            this.pnl_der.Size = new System.Drawing.Size(10, 310);
+            this.pnl_der.TabIndex = 5;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Chocolate;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(12, 57);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(896, 10);
+            this.panel2.TabIndex = 7;
+            // 
             // CP_CONTENEDOR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,7 +247,7 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(918, 377);
             this.Controls.Add(this.pnl_cont);
-            this.Controls.Add(this.pnl_izq);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnl_der);
             this.Controls.Add(this.pnl_inf);
@@ -277,13 +277,13 @@
         private FontAwesome.Sharp.IconMenuItem pARTICIPANTESToolStripMenuItem;
         private FontAwesome.Sharp.IconMenuItem gANADORESToolStripMenuItem;
         private FontAwesome.Sharp.IconMenuItem rEGISTRODEPLACASToolStripMenuItem;
-        private System.Windows.Forms.Panel pnl_izq;
         private System.Windows.Forms.Panel pnl_cont;
         private System.Windows.Forms.Panel pnl_inf;
         private System.Windows.Forms.Panel pnl_sup;
-        private System.Windows.Forms.Panel pnl_der;
         private FontAwesome.Sharp.IconMenuItem estadisticasToolStripMenuItem1;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnl_der;
+        private System.Windows.Forms.Panel panel2;
     }
 }

@@ -59,8 +59,8 @@ namespace PRESENTACION
                     MessageBox.Show("Se Registraron " + txt_placas.Text + " al integrante " +txt_Nombre.Text+ " Exitosamente");
                     txt_id_integrante.Clear();
                     txt_Nombre.Clear();
-                    txt_mes.Clear();
-                    txt_semana.Clear();
+                    //txt_mes.Clear();
+                    //txt_semana.Clear();
                 }
             }
             catch (Exception ex)
@@ -72,6 +72,12 @@ namespace PRESENTACION
         {
             CN_PLacas mostarplacas = new CN_PLacas();
             dgv_integrantes.DataSource = mostarplacas.dt_MostrarIntegrantes();
+        }
+        private void mostrar_placas()
+        {
+            CN_PLacas mostarplacas_usuario = new CN_PLacas();
+           
+            dgv_placas_mes.DataSource = mostarplacas_usuario.dt_Mostrar_plac_int(Convert.ToInt32(txt_id_integrante.Text));
         }
         private void iconButton2_Click(object sender, EventArgs e)
         {
@@ -95,11 +101,13 @@ namespace PRESENTACION
         {
             cargar_fechas();
             MostrarIntegrantes();
+           
         }
         private void dgv_integrantes_CellClick(object sender, DataGridViewCellEventArgs e)
         {            
             txt_id_integrante.Text = dgv_integrantes.CurrentRow.Cells["ID_INTEGRANTE"].Value.ToString();
-            txt_Nombre.Text = dgv_integrantes.CurrentRow.Cells["USUARIO"].Value.ToString();              
+            txt_Nombre.Text = dgv_integrantes.CurrentRow.Cells["USUARIO"].Value.ToString();
+            mostrar_placas();
         }
 
         private SqlConnection conexion = new SqlConnection("Server=.;database=AMATEURS;INTEGRATED SECURITY=TRUE");

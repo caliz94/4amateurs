@@ -24,5 +24,12 @@ namespace NEGOCIO
             dt = placas_cd.dt_MostrarIntegrantes();
             return dt;
         }
+
+        public DataTable dt_Mostrar_plac_int(int ID_INTEGRANTE)
+        {
+            DataTable dt_placas = new DataTable();
+            dt_placas = placas_cd.dt_mostrar_placas_int(ID_INTEGRANTE);
+            return dt_placas;
+        }
     }
 }
