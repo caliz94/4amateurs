@@ -93,6 +93,16 @@ namespace PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap D_NQ {
+            get {
+                object obj = ResourceManager.GetObject("D_NQ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dakotha {
             get {
                 object obj = ResourceManager.GetObject("dakotha", resourceCulture);
@@ -206,6 +216,16 @@ namespace PRESENTACION.Properties {
         internal static System.Drawing.Bitmap puka {
             get {
                 object obj = ResourceManager.GetObject("puka", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Recurso_1 {
+            get {
+                object obj = ResourceManager.GetObject("Recurso 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

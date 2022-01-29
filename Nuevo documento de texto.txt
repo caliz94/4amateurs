@@ -1,0 +1,5 @@
+git remote add origin https://github.com/caliz94/4amateurs.git
+git branch -M main
+git push -u origin main
+
+https://github.com/caliz94/4amateurs.git

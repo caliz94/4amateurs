@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnl_cont = new System.Windows.Forms.Panel();
+            this.dgv_placas_mes = new System.Windows.Forms.DataGridView();
             this.dgv_fechas = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_placas = new System.Windows.Forms.TextBox();
@@ -47,14 +48,13 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.dgv_placas_mes = new System.Windows.Forms.DataGridView();
             this.pnl_cont.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_placas_mes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_fechas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_integrantes)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_placas_mes)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_cont
@@ -82,12 +82,20 @@
             this.pnl_cont.Size = new System.Drawing.Size(990, 487);
             this.pnl_cont.TabIndex = 11;
             // 
+            // dgv_placas_mes
+            // 
+            this.dgv_placas_mes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_placas_mes.Location = new System.Drawing.Point(495, 44);
+            this.dgv_placas_mes.Name = "dgv_placas_mes";
+            this.dgv_placas_mes.Size = new System.Drawing.Size(282, 390);
+            this.dgv_placas_mes.TabIndex = 25;
+            // 
             // dgv_fechas
             // 
             this.dgv_fechas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_fechas.Location = new System.Drawing.Point(202, 10);
             this.dgv_fechas.Name = "dgv_fechas";
-            this.dgv_fechas.Size = new System.Drawing.Size(11, 10);
+            this.dgv_fechas.Size = new System.Drawing.Size(36, 16);
             this.dgv_fechas.TabIndex = 24;
             this.dgv_fechas.Visible = false;
             // 
@@ -274,14 +282,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // dgv_placas_mes
-            // 
-            this.dgv_placas_mes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_placas_mes.Location = new System.Drawing.Point(495, 44);
-            this.dgv_placas_mes.Name = "dgv_placas_mes";
-            this.dgv_placas_mes.Size = new System.Drawing.Size(282, 390);
-            this.dgv_placas_mes.TabIndex = 25;
-            // 
             // REGISTRO_PLACAS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -298,12 +298,12 @@
             this.Load += new System.EventHandler(this.REGISTRO_PLACAS_Load);
             this.pnl_cont.ResumeLayout(false);
             this.pnl_cont.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_placas_mes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_fechas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_integrantes)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_placas_mes)).EndInit();
             this.ResumeLayout(false);
 
         }

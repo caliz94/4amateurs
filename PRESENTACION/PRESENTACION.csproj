@@ -167,7 +167,9 @@
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\D_NQ.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Amidory.jpg" />
   </ItemGroup>
@@ -215,6 +217,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\trroyita.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recurso 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
