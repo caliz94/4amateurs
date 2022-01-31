@@ -179,11 +179,11 @@ namespace PRESENTACION
             }
         }
 
-        private void fotos()
+        public void fotos()
         {
             if (txt_idUsuario.Text == "1")
             {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.Amidory;
+                pictureBox1.Image = global::PRESENTACION.Properties.Resources.Amidory;
             }
             if (txt_idUsuario.Text == "2")
             {

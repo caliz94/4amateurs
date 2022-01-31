@@ -52,26 +52,26 @@ namespace PRESENTACION
                 errorProvider1.SetError(txt_usuario, "Ingrese un Nombre de Usuario");
             }
 
-            else if (txt_celular.Text == string.Empty)
-            {
-                errorProvider1.SetError(txt_usuario, "");
-                errorProvider1.SetError(txt_pais, "");
-                errorProvider1.SetError(txt_celular, "");
-                errorProvider1.SetError(txt_usuario, "");
-                errorProvider1.SetError(txt_fecha_ingreso, "");
-                errorProvider1.SetError(txt_celular, "Ingrese un Numero celular");
-            }
+            //else if (txt_celular.Text == string.Empty)
+            //{
+            //    errorProvider1.SetError(txt_usuario, "");
+            //    errorProvider1.SetError(txt_pais, "");
+            //    errorProvider1.SetError(txt_celular, "");
+            //    errorProvider1.SetError(txt_usuario, "");
+            //    errorProvider1.SetError(txt_fecha_ingreso, "");
+            //    errorProvider1.SetError(txt_celular, "Ingrese un Numero celular");
+            //}
 
-            else if (txt_pais.Text == string.Empty)
-            {
-                errorProvider1.SetError(txt_celular, "");
-                errorProvider1.SetError(txt_usuario, "");
-                errorProvider1.SetError(txt_pais, "");
-                errorProvider1.SetError(txt_celular, "");
-                errorProvider1.SetError(txt_usuario, "");
-                errorProvider1.SetError(txt_fecha_ingreso, "");
-                errorProvider1.SetError(txt_pais, "Ingrese el nombre del pais donde localidad");
-            }
+            //else if (txt_pais.Text == string.Empty)
+            //{
+            //    errorProvider1.SetError(txt_celular, "");
+            //    errorProvider1.SetError(txt_usuario, "");
+            //    errorProvider1.SetError(txt_pais, "");
+            //    errorProvider1.SetError(txt_celular, "");
+            //    errorProvider1.SetError(txt_usuario, "");
+            //    errorProvider1.SetError(txt_fecha_ingreso, "");
+            //    errorProvider1.SetError(txt_pais, "Ingrese el nombre del pais donde localidad");
+            //}
 
             else if (txt_fecha_ingreso.Text == string.Empty)
             {

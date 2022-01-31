@@ -81,12 +81,43 @@ namespace PRESENTACION
             Conexion.Close();
         }
 
+       public Integrantes int_fotos = new Integrantes();
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
+            int_fotos.fotos();
             GrafCategorias();
             mejores_5_mes();
             placas_anuales();
         }
+
+          public void fotos()
+        {
+            if (txt_idUsuario.Text == "1")
+            {
+                pictureBox1.Image = global::PRESENTACION.Properties.Resources.Amidory;
+            }
+            if (txt_idUsuario.Text == "2")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.caliz;
+            }
+            if (txt_idUsuario.Text == "3")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.dakotha;
+            }
+            if (txt_idUsuario.Text == "4")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.daniel;
+            }
+            if (txt_idUsuario.Text == "5")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.guayo;
+            }
+            if (txt_idUsuario.Text == "6")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.isa;
+            }
+        }
+
         private static MenuPrincipal _Abrir;
         public static MenuPrincipal Abrir
         {

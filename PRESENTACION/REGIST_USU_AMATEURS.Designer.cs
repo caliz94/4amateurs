@@ -36,6 +36,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txt_comentario = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BTN_GUARDAR = new FontAwesome.Sharp.IconButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,18 +45,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_celular = new System.Windows.Forms.TextBox();
-            this.txt_comentario = new System.Windows.Forms.TextBox();
             this.txt_fecha_ingreso = new System.Windows.Forms.TextBox();
             this.txt_pais = new System.Windows.Forms.TextBox();
             this.txt_usuario = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_usuarios
@@ -150,6 +150,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.txt_comentario);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.BTN_GUARDAR);
             this.panel3.Controls.Add(this.label5);
@@ -158,7 +159,6 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.txt_celular);
-            this.panel3.Controls.Add(this.txt_comentario);
             this.panel3.Controls.Add(this.txt_fecha_ingreso);
             this.panel3.Controls.Add(this.txt_pais);
             this.panel3.Controls.Add(this.txt_usuario);
@@ -167,6 +167,23 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(637, 694);
             this.panel3.TabIndex = 25;
+            // 
+            // txt_comentario
+            // 
+            this.txt_comentario.Location = new System.Drawing.Point(252, 216);
+            this.txt_comentario.Multiline = true;
+            this.txt_comentario.Name = "txt_comentario";
+            this.txt_comentario.Size = new System.Drawing.Size(176, 60);
+            this.txt_comentario.TabIndex = 35;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pictureBox1.Location = new System.Drawing.Point(56, 367);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(372, 288);
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
             // 
             // BTN_GUARDAR
             // 
@@ -180,7 +197,7 @@
             this.BTN_GUARDAR.IconColor = System.Drawing.Color.Green;
             this.BTN_GUARDAR.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BTN_GUARDAR.IconSize = 35;
-            this.BTN_GUARDAR.Location = new System.Drawing.Point(252, 279);
+            this.BTN_GUARDAR.Location = new System.Drawing.Point(252, 289);
             this.BTN_GUARDAR.Name = "BTN_GUARDAR";
             this.BTN_GUARDAR.Size = new System.Drawing.Size(176, 72);
             this.BTN_GUARDAR.TabIndex = 33;
@@ -194,7 +211,7 @@
             this.label5.AutoSize = true;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(87, 130);
+            this.label5.Location = new System.Drawing.Point(87, 104);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 16);
             this.label5.TabIndex = 30;
@@ -205,7 +222,7 @@
             this.label4.AutoSize = true;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(87, 99);
+            this.label4.Location = new System.Drawing.Point(87, 179);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 16);
             this.label4.TabIndex = 29;
@@ -216,7 +233,7 @@
             this.label3.AutoSize = true;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(87, 167);
+            this.label3.Location = new System.Drawing.Point(87, 140);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(152, 16);
             this.label3.TabIndex = 28;
@@ -227,7 +244,7 @@
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(87, 207);
+            this.label2.Location = new System.Drawing.Point(87, 216);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 16);
             this.label2.TabIndex = 27;
@@ -247,24 +264,15 @@
             // txt_celular
             // 
             this.txt_celular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_celular.Location = new System.Drawing.Point(252, 99);
+            this.txt_celular.Location = new System.Drawing.Point(252, 179);
             this.txt_celular.Name = "txt_celular";
             this.txt_celular.Size = new System.Drawing.Size(176, 26);
             this.txt_celular.TabIndex = 25;
             // 
-            // txt_comentario
-            // 
-            this.txt_comentario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_comentario.Location = new System.Drawing.Point(252, 207);
-            this.txt_comentario.Multiline = true;
-            this.txt_comentario.Name = "txt_comentario";
-            this.txt_comentario.Size = new System.Drawing.Size(176, 55);
-            this.txt_comentario.TabIndex = 24;
-            // 
             // txt_fecha_ingreso
             // 
             this.txt_fecha_ingreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_fecha_ingreso.Location = new System.Drawing.Point(252, 167);
+            this.txt_fecha_ingreso.Location = new System.Drawing.Point(252, 140);
             this.txt_fecha_ingreso.Name = "txt_fecha_ingreso";
             this.txt_fecha_ingreso.Size = new System.Drawing.Size(176, 26);
             this.txt_fecha_ingreso.TabIndex = 23;
@@ -272,7 +280,7 @@
             // txt_pais
             // 
             this.txt_pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pais.Location = new System.Drawing.Point(252, 133);
+            this.txt_pais.Location = new System.Drawing.Point(252, 99);
             this.txt_pais.Name = "txt_pais";
             this.txt_pais.Size = new System.Drawing.Size(176, 26);
             this.txt_pais.TabIndex = 21;
@@ -288,15 +296,6 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.pictureBox1.Location = new System.Drawing.Point(56, 367);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(372, 288);
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
             // 
             // REGIST_USU_AMATEURS
             // 
@@ -321,8 +320,8 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -342,11 +341,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_celular;
-        private System.Windows.Forms.TextBox txt_comentario;
         private System.Windows.Forms.TextBox txt_fecha_ingreso;
         private System.Windows.Forms.TextBox txt_pais;
         private System.Windows.Forms.TextBox txt_usuario;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txt_comentario;
     }
 }
