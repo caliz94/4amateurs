@@ -36,21 +36,21 @@ as
 INSERT INTO PARTICIPACION VALUES(@ID_INTEGRANTE,@PARTICIPACIONES,@FECHA_PARTICIPACION,@TIPO_DE_SALA)
 GO
 --placas del mes de cada uno de los integrantes
-create proc placas_mes
+ALTER proc placas_mes
 as
 select i.USUARIO,sum(P.R_PLACAS) as PlacasMes from INTEGRANTES as I
-inner join PLACAS AS P ON P.ID_INTEGRANTE = I.ID_INTEGRANTE where p.id_mes=month(getdate()) GROUP BY i.USUARIO  
+inner join PLACAS AS P ON P.ID_INTEGRANTE = I.ID_INTEGRANTE where p.id_mes=month(getdate()) AND I.ESTADO = 'ACTIVO' GROUP BY i.USUARIO,p.R_PLACAS order by R_PLACAS desc
 go
 
 --placas del mes de cada uno de los integrantes
-create proc mejores_5_mes
+ALTER proc mejores_5_mes
 as
 select top 5 i.USUARIO,sum(P.R_PLACAS) as PlacasMes from INTEGRANTES as I
-inner join PLACAS AS P ON P.ID_INTEGRANTE = I.ID_INTEGRANTE where p.id_mes=month(getdate()) GROUP BY i.USUARIO order by COUNT(5) desc
+inner join PLACAS AS P ON P.ID_INTEGRANTE = I.ID_INTEGRANTE where p.id_mes=month(getdate()) AND I.ESTADO = 'ACTIVO' GROUP BY i.USUARIO order by COUNT(5) desc
 go
 
 --vistan de placas anuales para conbinar con sp_anual
-create view vw_placas_anuales
+ALTER view vw_placas_anuales
 as
 select f.id_mes,sum(R_PLACAS) as total from PLACAS as p  
 inner join  fecha as f on f.id_mes = P.id_mes Group by f.id_mes 
@@ -60,7 +60,7 @@ go
 alter proc sp_anual
 as
 select total,mes from vw_placas_anuales as p 
-inner join fecha as f on p.id_mes =f.id_mes  order by f.id_mes 
+inner join fecha as f on p.id_mes =f.id_mes   order by f.id_mes 
 go
 
 --sp para mostrar integrantes

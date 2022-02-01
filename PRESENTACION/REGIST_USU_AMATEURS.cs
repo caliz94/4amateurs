@@ -43,6 +43,7 @@ namespace PRESENTACION
         #region guardar
         private void iconButton1_Click(object sender, EventArgs e)
         {
+            txt_usuario.Focus();
             if (txt_usuario.Text == string.Empty)
             {
                 errorProvider1.SetError(txt_pais, "");
@@ -175,6 +176,7 @@ namespace PRESENTACION
         }
         private void REGIST_USU_AMATEURS_Load(object sender, EventArgs e)
         {
+            txt_usuario.Focus();
             mostrar();
         }
 

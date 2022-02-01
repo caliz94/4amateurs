@@ -84,6 +84,7 @@
             // 
             // dgv_placas_mes
             // 
+            this.dgv_placas_mes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_placas_mes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_placas_mes.Location = new System.Drawing.Point(495, 44);
             this.dgv_placas_mes.Name = "dgv_placas_mes";
@@ -132,6 +133,7 @@
             // 
             // dgv_integrantes
             // 
+            this.dgv_integrantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_integrantes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_integrantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_integrantes.Dock = System.Windows.Forms.DockStyle.Left;
