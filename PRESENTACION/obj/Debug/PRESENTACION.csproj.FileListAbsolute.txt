@@ -165,3 +165,4 @@ E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.csproj.GenerateResource.Cache
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.exe
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.pdb
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.Form1.resources
