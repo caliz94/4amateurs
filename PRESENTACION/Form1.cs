@@ -16,5 +16,31 @@ namespace PRESENTACION
         {
             InitializeComponent();
         }
+
+
+        private static Form1 _Abrir;
+        public static Form1 Abrir
+        {
+            get
+            {
+                if (_Abrir == null)
+                    _Abrir = new Form1();
+                return _Abrir;
+            }
+        }
+        private void REGISTRO_PLACAS_FormClosed(object sender, FormClosedEventArgs e)
+        {
+           
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _Abrir = null;
+        }
     }
 }

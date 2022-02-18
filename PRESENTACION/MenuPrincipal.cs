@@ -25,8 +25,8 @@ namespace PRESENTACION
         private SqlConnection Conexion = new SqlConnection("Server=.;database=AMATEURS;INTEGRATED SECURITY=TRUE");
 
         SqlCommand cmd;
+        SqlDataReader dar;
         SqlDataReader dr;
-
 
         ArrayList Categoria = new ArrayList();
         ArrayList CantProd = new ArrayList();
@@ -35,14 +35,14 @@ namespace PRESENTACION
             cmd = new SqlCommand("placas_mes", Conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             Conexion.Open();
-            dr = cmd.ExecuteReader();
-            while (dr.Read())
+            dar = cmd.ExecuteReader();
+            while (dar.Read())
             {
-                Categoria.Add(dr.GetString(0));
-                CantProd.Add(dr.GetInt32(1));
+                Categoria.Add(dar.GetString(0));
+                CantProd.Add(dar.GetInt32(1));                        
             }
             Grf_PlacasMes.Series[0].Points.DataBindXY(Categoria, CantProd);
-            dr.Close();
+            dar.Close();
             Conexion.Close();
         }
 

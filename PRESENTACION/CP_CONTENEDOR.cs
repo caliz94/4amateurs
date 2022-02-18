@@ -76,5 +76,14 @@ namespace PRESENTACION
         {
             
         }
+
+        private void gENERARREPORTEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 abrirform = Form1.Abrir;
+            abrirform.TopLevel = false;
+            this.pnl_cont.Controls.Add(abrirform);
+            this.pnl_cont.Tag = abrirform;
+            abrirform.Show();
+        }
     }
 }

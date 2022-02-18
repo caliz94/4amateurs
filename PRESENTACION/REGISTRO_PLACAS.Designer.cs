@@ -35,7 +35,6 @@
             this.dgv_fechas = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_placas = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgv_integrantes = new System.Windows.Forms.DataGridView();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,7 +51,6 @@
             this.pnl_cont.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_placas_mes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_fechas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_integrantes)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -66,7 +64,6 @@
             this.pnl_cont.Controls.Add(this.dgv_fechas);
             this.pnl_cont.Controls.Add(this.label2);
             this.pnl_cont.Controls.Add(this.txt_placas);
-            this.pnl_cont.Controls.Add(this.pictureBox1);
             this.pnl_cont.Controls.Add(this.dgv_integrantes);
             this.pnl_cont.Controls.Add(this.iconButton1);
             this.pnl_cont.Controls.Add(this.label4);
@@ -80,12 +77,13 @@
             this.pnl_cont.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_cont.Location = new System.Drawing.Point(0, 0);
             this.pnl_cont.Name = "pnl_cont";
-            this.pnl_cont.Size = new System.Drawing.Size(990, 487);
+            this.pnl_cont.Size = new System.Drawing.Size(1157, 487);
             this.pnl_cont.TabIndex = 11;
             // 
             // dgv_placas_mes
             // 
             this.dgv_placas_mes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_placas_mes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders;
             this.dgv_placas_mes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -99,8 +97,10 @@
             this.dgv_placas_mes.Location = new System.Drawing.Point(495, 44);
             this.dgv_placas_mes.MultiSelect = false;
             this.dgv_placas_mes.Name = "dgv_placas_mes";
+            this.dgv_placas_mes.ReadOnly = true;
             this.dgv_placas_mes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            this.dgv_placas_mes.Size = new System.Drawing.Size(282, 390);
+            this.dgv_placas_mes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_placas_mes.Size = new System.Drawing.Size(608, 390);
             this.dgv_placas_mes.TabIndex = 25;
             // 
             // dgv_fechas
@@ -133,16 +133,6 @@
             this.txt_placas.Size = new System.Drawing.Size(196, 20);
             this.txt_placas.TabIndex = 22;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DimGray;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Location = new System.Drawing.Point(800, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 483);
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            // 
             // dgv_integrantes
             // 
             this.dgv_integrantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -151,6 +141,8 @@
             this.dgv_integrantes.Dock = System.Windows.Forms.DockStyle.Left;
             this.dgv_integrantes.Location = new System.Drawing.Point(0, 0);
             this.dgv_integrantes.Name = "dgv_integrantes";
+            this.dgv_integrantes.ReadOnly = true;
+            this.dgv_integrantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_integrantes.Size = new System.Drawing.Size(196, 483);
             this.dgv_integrantes.TabIndex = 20;
             this.dgv_integrantes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_integrantes_CellClick);
@@ -266,7 +258,7 @@
             this.panel5.BackColor = System.Drawing.Color.DimGray;
             this.panel5.Controls.Add(this.iconButton2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(990, 0);
+            this.panel5.Location = new System.Drawing.Point(1157, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(41, 487);
             this.panel5.TabIndex = 15;
@@ -300,7 +292,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1031, 487);
+            this.ClientSize = new System.Drawing.Size(1198, 487);
             this.Controls.Add(this.pnl_cont);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -314,7 +306,6 @@
             this.pnl_cont.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_placas_mes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_fechas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_integrantes)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -337,7 +328,6 @@
         private System.Windows.Forms.TextBox txt_id_integrante;
         private System.Windows.Forms.Panel panel5;
         private FontAwesome.Sharp.IconButton iconButton2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.TextBox txt_placas;
         private System.Windows.Forms.Label label2;
