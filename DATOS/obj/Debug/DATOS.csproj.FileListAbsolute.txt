@@ -34,3 +34,8 @@ E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\4amateurs\DATOS\bin\De
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\4amateurs\DATOS\obj\Debug\DATOS.csprojResolveAssemblyReference.cache
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\4amateurs\DATOS\obj\Debug\DATOS.dll
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\4amateurs\DATOS\obj\Debug\DATOS.pdb
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\bin\Debug\DATOS.dll
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\bin\Debug\DATOS.pdb
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\obj\Debug\DATOS.csprojResolveAssemblyReference.cache
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\obj\Debug\DATOS.dll
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\DATOS\obj\Debug\DATOS.pdb

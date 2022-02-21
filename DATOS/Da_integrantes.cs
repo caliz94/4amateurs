@@ -12,8 +12,6 @@ namespace DATOS
         //hacer referencia a la clase de la conexion con el servidor
         private Da_conex_servidor cadena = new Da_conex_servidor();
         SqlCommand cmd = new SqlCommand();
-
-
         //metodo para insertar
         public void insertar(string USUARIO,string CELULAR,string PAIS_NACIONALIDAD,DateTime FECHA_INGRESO,string COMENTARIO/*, string ESTADO*/)
         {
@@ -30,9 +28,7 @@ namespace DATOS
             cmd.Parameters.Clear();
             cadena.CERRAR_SERVER();                            
         }
-
         //editar usuarios
-
         public void editar(int ID_INTEGRANTE, string USUARIO, string CELULAR, string PAIS_NACIONALIDAD, DateTime FECHA_INGRESO, string COMENTARIO)
         {
             cmd.Connection = cadena.ABRIR_SERVER();
@@ -60,31 +56,24 @@ namespace DATOS
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
             cadena.CERRAR_SERVER();
-
         }
-
 
         //ver usuarios
         SqlDataReader cargar_usuarios;
-        DataTable usuarios = new DataTable();
-      
+        DataTable usuarios = new DataTable();     
         public DataTable ver_usuarios()
-        {
-            
+        {            
             cmd.Connection = cadena.ABRIR_SERVER();
             cmd.CommandText = "verusuarios";
             cmd.CommandType = CommandType.StoredProcedure;
-
             cargar_usuarios = cmd.ExecuteReader();
             usuarios.Load(cargar_usuarios);
             cmd.Parameters.Clear();
             cadena.CERRAR_SERVER();
             return usuarios;
         }
-
-        SqlDataReader leer;
+       SqlDataReader leer;
        public DataTable tabla_integrantes = new DataTable(); 
-
         public DataTable mostrar_integrantes()
         {
             cmd.Parameters.Clear();
@@ -92,7 +81,6 @@ namespace DATOS
             cmd.Connection = cadena.ABRIR_SERVER();
             cmd.CommandText = "sp_MostrarIntegrantes";
             cmd.CommandType = CommandType.StoredProcedure;
-
             leer = cmd.ExecuteReader();
             tabla_integrantes.Load(leer);
             cmd.Parameters.Clear();
