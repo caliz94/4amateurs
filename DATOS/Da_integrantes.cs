@@ -82,7 +82,6 @@ namespace DATOS
             return usuarios;
         }
 
-      
         SqlDataReader leer;
        public DataTable tabla_integrantes = new DataTable(); 
 

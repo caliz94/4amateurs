@@ -22,8 +22,8 @@ namespace PRESENTACION
 
 
         //CADENA CON EL SERVIDOR DE BASE DE DATOS
-        private SqlConnection Conexion = new SqlConnection("Server=.;database=AMATEURS;INTEGRATED SECURITY=TRUE");
-
+        public SqlConnection Conexion = new SqlConnection("Server=.;database=AMATEURS;INTEGRATED SECURITY=TRUE");
+  
         SqlCommand cmd;
         SqlDataReader dar;
         SqlDataReader dr;
@@ -84,11 +84,15 @@ namespace PRESENTACION
        public Integrantes int_fotos = new Integrantes();
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
-            int_fotos.fotos();
+            
+            top_1();
+            fotos();
             GrafCategorias();
             mejores_5_mes();
             placas_anuales();
         }
+
+    
 
           public void fotos()
         {
@@ -96,7 +100,7 @@ namespace PRESENTACION
             {
                 pictureBox1.Image = global::PRESENTACION.Properties.Resources.Amidory;
             }
-            if (txt_idUsuario.Text == "2")
+            if (txt_idUsuario.Text == "14")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.caliz;
             }
@@ -138,6 +142,27 @@ namespace PRESENTACION
         private void iconButton1_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void top_1()
+        {
+            cmd = new SqlCommand("top_1_mes", Conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            Conexion.Open();
+            dr = cmd.ExecuteReader();
+           
+           if (dr.Read())
+            {
+                txt_idUsuario.Text = dr[0].ToString();
+                txt_usuario.Text = dr[1].ToString();
+                txt_cel.Text = dr[2].ToString();
+                txt_nac.Text = dr[3].ToString();
+                txt_ingr.Text = dr[4].ToString();
+                txt_placas.Text = dr[5].ToString();
+            }
+           
+            dr.Close();
+            Conexion.Close();
         }
     }
 }
