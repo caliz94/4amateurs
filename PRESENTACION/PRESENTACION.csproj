@@ -190,54 +190,6 @@
     <None Include="Resources\D_NQ.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Amidory.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\caliz.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dakotha.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\daniel.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\guayo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IMG-20220124-WA0065.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IMG-20220124-WA0087.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IMG-20220125-WA0019.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IMG-20220125-WA0040.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\isa.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\jasson.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\lennox.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\puka.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\roger.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\taly.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\trroyita.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Recurso 1.png" />
   </ItemGroup>
   <ItemGroup>
