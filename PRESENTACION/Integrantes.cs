@@ -183,27 +183,27 @@ namespace PRESENTACION
         {
             if (txt_idUsuario.Text == "1")
             {
-                pictureBox1.Image = global::PRESENTACION.Properties.Resources.Amidory;
+                pictureBox1.Image = global::PRESENTACION.Properties.Resources.1;
             }
             if (txt_idUsuario.Text == "2")
             {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.caliz;
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.2;
             }
             if (txt_idUsuario.Text == "3")
             {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.dakotha;
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.3;
             }
             if (txt_idUsuario.Text == "4")
             {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.daniel;
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.4;
             }
             if (txt_idUsuario.Text == "5")
             {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.guayo;
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.5;
             }
             if (txt_idUsuario.Text == "6")
             {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.isa;
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.6;
             }
         }
 

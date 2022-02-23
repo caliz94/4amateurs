@@ -297,7 +297,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = global::PRESENTACION.Properties.Resources.Recurso_4;
+         
             this.pictureBox3.Location = new System.Drawing.Point(26, 7);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(421, 44);
