@@ -183,27 +183,24 @@ namespace PRESENTACION
         {
             if (txt_idUsuario.Text == "1")
             {
-                pictureBox1.Image = global::PRESENTACION.Properties.Resources.1;
+                pictureBox1.Image = global::PRESENTACION.Properties.Resources._1;
             }
             if (txt_idUsuario.Text == "2")
             {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.2;
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._2;
             }
             if (txt_idUsuario.Text == "3")
             {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.3;
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._3;
             }
-            if (txt_idUsuario.Text == "4")
-            {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.4;
-            }
+         
             if (txt_idUsuario.Text == "5")
             {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.5;
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._5;
             }
             if (txt_idUsuario.Text == "6")
             {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources.6;
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._6;
             }
         }
 
