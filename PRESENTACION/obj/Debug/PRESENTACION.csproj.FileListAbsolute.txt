@@ -131,7 +131,6 @@ E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.Integrantes.resources
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.Login.resources
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.MenuPrincipal.resources
-E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.Properties.Resources.resources
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.REGISTRO_PARTICIPACION.resources
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.REGISTRO_PLACAS.resources
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.REGIST_USU_AMATEURS.resources
