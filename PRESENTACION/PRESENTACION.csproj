@@ -187,22 +187,22 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\D_NQ.png" />
+    <None Include="Resources\FF_PURPURA.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Recurso 1.png" />
+    <None Include="Resources\LIDER_INTERINO.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Recurso 11.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Recurso 2.png" />
+    <None Include="Resources\DECANO.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Recurso 3.png" />
+    <None Include="Resources\LIDER.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Recurso 4.png" />
+    <None Include="Resources\AMATEURS.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1.jpg" />
