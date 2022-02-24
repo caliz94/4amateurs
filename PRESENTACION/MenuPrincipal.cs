@@ -97,23 +97,7 @@ namespace PRESENTACION
           public void fotos()
         {
             
-            if (txt_idUsuario.Text == "2")
-            {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._2;
-            }
-            if (txt_idUsuario.Text == "3")
-            {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._3;
-            }
-         
-            if (txt_idUsuario.Text == "5")
-            {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._5;
-            }
-            if (txt_idUsuario.Text == "6")
-            {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._6;
-            }
+
         }
 
         private static MenuPrincipal _Abrir;
