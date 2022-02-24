@@ -96,10 +96,7 @@ namespace PRESENTACION
 
           public void fotos()
         {
-            if (txt_idUsuario.Text == "1")
-            {
-                pictureBox1.Image = global::PRESENTACION.Properties.Resources._1;
-            }
+            
             if (txt_idUsuario.Text == "2")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._2;
