@@ -171,6 +171,7 @@ namespace PRESENTACION
             }
         }
 
+        #region fotos
         public void fotos()
         {
             if (txt_idUsuario.Text == "1")
@@ -328,6 +329,6 @@ namespace PRESENTACION
 
             }
         }
-
+        #endregion
     }
 }
