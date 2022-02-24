@@ -43,3 +43,10 @@ E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\4amateurs\NEGOCIO\bin\
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\4amateurs\NEGOCIO\obj\Debug\NEGOCIO.csprojResolveAssemblyReference.cache
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\4amateurs\NEGOCIO\obj\Debug\NEGOCIO.dll
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\4amateurs\NEGOCIO\obj\Debug\NEGOCIO.pdb
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\NEGOCIO\bin\Debug\NEGOCIO.dll
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\NEGOCIO\bin\Debug\NEGOCIO.pdb
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\NEGOCIO\bin\Debug\DATOS.dll
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\NEGOCIO\bin\Debug\DATOS.pdb
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\NEGOCIO\obj\Debug\NEGOCIO.csprojResolveAssemblyReference.cache
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\NEGOCIO\obj\Debug\NEGOCIO.dll
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\NEGOCIO\obj\Debug\NEGOCIO.pdb
