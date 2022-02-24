@@ -177,153 +177,156 @@ namespace PRESENTACION
             {
                 pictureBox1.Image = global::PRESENTACION.Properties.Resources._1;
             }
-            if (txt_idUsuario.Text == "2")
+           else if  (txt_idUsuario.Text == "2")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._2;
             }
-            if (txt_idUsuario.Text == "3")
+            else if (txt_idUsuario.Text == "3")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._3;
             }
-         
-            if (txt_idUsuario.Text == "5")
+
+            else if (txt_idUsuario.Text == "5")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._5;
                
             }
-            if (txt_idUsuario.Text == "6")
+            else if (txt_idUsuario.Text == "6")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._6;
             }
-            //if (txt_idUsuario.Text == "")
+            //else if (txt_idUsuario.Text == "")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._7;
             //}
-            if (txt_idUsuario.Text == "8")
+            else if (txt_idUsuario.Text == "8")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._8;
             }
-            if (txt_idUsuario.Text == "9")
+            else if (txt_idUsuario.Text == "9")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._9;
             }
-            if (txt_idUsuario.Text == "10")
+            else if (txt_idUsuario.Text == "10")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._10;
             }
-            //if (txt_idUsuario.Text == "11")
+            //else if (txt_idUsuario.Text == "11")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._11;
             //}
-            //if (txt_idUsuario.Text == "12")
+            //else if (txt_idUsuario.Text == "12")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._12;
             //}
-            if (txt_idUsuario.Text == "13")
+            else if (txt_idUsuario.Text == "13")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._13;
             }
-            if (txt_idUsuario.Text == "14")
+            else if (txt_idUsuario.Text == "14")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._14;
             }
-            if (txt_idUsuario.Text == "15")
+            else if (txt_idUsuario.Text == "15")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._15;
             }
-            if (txt_idUsuario.Text == "16")
+            else if (txt_idUsuario.Text == "16")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._16;
             }
-            if (txt_idUsuario.Text == "17")
+            else if (txt_idUsuario.Text == "17")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._17;
             }
-            if (txt_idUsuario.Text == "18")
+            else if (txt_idUsuario.Text == "18")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._18;
             }
-            if (txt_idUsuario.Text == "19")
+            else if (txt_idUsuario.Text == "19")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._19;
             }
-            //if (txt_idUsuario.Text == "20")
+            //else if (txt_idUsuario.Text == "20")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._20;
             //}
-            //if (txt_idUsuario.Text == "21")
+            //else if (txt_idUsuario.Text == "21")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._21;
             //}
-            if (txt_idUsuario.Text == "22")
+            else if (txt_idUsuario.Text == "22")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._22;
             }
-            //if (txt_idUsuario.Text == "23")
+            //else if (txt_idUsuario.Text == "23")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._23;
             //}
-            if (txt_idUsuario.Text == "24")
+            else if (txt_idUsuario.Text == "24")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._24;
             }
-            if (txt_idUsuario.Text == "25")
+            else if(txt_idUsuario.Text == "25")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._25;
             }
-            if (txt_idUsuario.Text == "26")
+            else if (txt_idUsuario.Text == "26")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._26;
             }
-            //if (txt_idUsuario.Text == "27")
+            //else if (txt_idUsuario.Text == "27")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._27;
             //}
-            if (txt_idUsuario.Text == "28")
+            else if (txt_idUsuario.Text == "28")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._28;
             }
-            //if (txt_idUsuario.Text == "29")
+            //else if (txt_idUsuario.Text == "29")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._29;
             //}
-            if (txt_idUsuario.Text == "30")
+            else if (txt_idUsuario.Text == "30")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._30;
             }
-            if (txt_idUsuario.Text == "31")
+            else if (txt_idUsuario.Text == "31")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._31;
             }
-            //if (txt_idUsuario.Text == "32")
+            //else if (txt_idUsuario.Text == "32")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._32;
             //}
-            //if (txt_idUsuario.Text == "33")
+            //else if (txt_idUsuario.Text == "33")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._33;
             //}
-            //if (txt_idUsuario.Text == "34")
+            //else if (txt_idUsuario.Text == "34")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._34;
             //}
-            //if (txt_idUsuario.Text == "35")
+            //else if (txt_idUsuario.Text == "35")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._35;
             //}
-            //if (txt_idUsuario.Text == "36")
+            //else if (txt_idUsuario.Text == "36")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._36;
             //}
-            //if (txt_idUsuario.Text == "37")
+            //else if (txt_idUsuario.Text == "37")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._37;
             //}
-            //if (txt_idUsuario.Text == "38")
+            //else if (txt_idUsuario.Text == "38")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._38;
             //}
+            else 
+            {
 
+            }
         }
 
     }
