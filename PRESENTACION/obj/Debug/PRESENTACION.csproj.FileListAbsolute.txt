@@ -125,3 +125,14 @@ E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\4amateurs\PRESENTACION
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.REGIST_USU_AMATEURS.resources
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.csproj.GenerateResource.Cache
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.Form1.resources
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.csprojResolveAssemblyReference.cache
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.CP_CONTENEDOR.resources
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.Form1.resources
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.Integrantes.resources
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.Login.resources
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.MenuPrincipal.resources
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.Properties.Resources.resources
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.REGISTRO_PARTICIPACION.resources
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.REGISTRO_PLACAS.resources
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.REGIST_USU_AMATEURS.resources
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.csproj.GenerateResource.Cache
