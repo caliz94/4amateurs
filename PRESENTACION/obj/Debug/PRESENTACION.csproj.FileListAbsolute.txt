@@ -135,3 +135,4 @@ E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.REGISTRO_PLACAS.resources
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.REGIST_USU_AMATEURS.resources
 E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\obj\Debug\PRESENTACION.csproj.GenerateResource.Cache
+E:\Users\stickers\Desktop\SOFTWARE DE 4AMATEURS\4amateurs\PRESENTACION\bin\Debug\PRESENTACION.exe.config
