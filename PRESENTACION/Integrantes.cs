@@ -146,14 +146,6 @@ namespace PRESENTACION
 
         #endregion
 
-
-        private void dgv_integrantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-          
-                    
-        }
-
-
         private void txt_idUsuario_TextChanged(object sender, EventArgs e)
         {
             fotos();
@@ -197,15 +189,16 @@ namespace PRESENTACION
             if (txt_idUsuario.Text == "5")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._5;
+               
             }
             if (txt_idUsuario.Text == "6")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._6;
             }
-            if (txt_idUsuario.Text == "")
-            {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._7;
-            }
+            //if (txt_idUsuario.Text == "")
+            //{
+            //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._7;
+            //}
             if (txt_idUsuario.Text == "8")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._8;

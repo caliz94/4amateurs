@@ -100,7 +100,6 @@
             this.dgv_integrantes.Size = new System.Drawing.Size(232, 763);
             this.dgv_integrantes.TabIndex = 0;
             this.dgv_integrantes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_integrantes_CellClick);
-            this.dgv_integrantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_integrantes_CellContentClick);
             // 
             // panel1
             // 
