@@ -37,6 +37,7 @@
             this.gANADORESToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.rEGISTRODEPLACASToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.estadisticasToolStripMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
+            this.gENERARREPORTEToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.pnl_cont = new System.Windows.Forms.Panel();
             this.pnl_inf = new System.Windows.Forms.Panel();
             this.pnl_sup = new System.Windows.Forms.Panel();
@@ -44,7 +45,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnl_der = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.gENERARREPORTEToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnl_sup.SuspendLayout();
             this.SuspendLayout();
@@ -168,20 +168,31 @@
             this.estadisticasToolStripMenuItem1.Text = "estadisticas de clan";
             this.estadisticasToolStripMenuItem1.Click += new System.EventHandler(this.estadisticasToolStripMenuItem1_Click);
             // 
+            // gENERARREPORTEToolStripMenuItem
+            // 
+            this.gENERARREPORTEToolStripMenuItem.ForeColor = System.Drawing.Color.Chocolate;
+            this.gENERARREPORTEToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.gENERARREPORTEToolStripMenuItem.IconColor = System.Drawing.Color.Black;
+            this.gENERARREPORTEToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.gENERARREPORTEToolStripMenuItem.Name = "gENERARREPORTEToolStripMenuItem";
+            this.gENERARREPORTEToolStripMenuItem.Size = new System.Drawing.Size(161, 53);
+            this.gENERARREPORTEToolStripMenuItem.Text = "GENERAR REPORTE";
+            this.gENERARREPORTEToolStripMenuItem.Click += new System.EventHandler(this.gENERARREPORTEToolStripMenuItem_Click);
+            // 
             // pnl_cont
             // 
             this.pnl_cont.BackColor = System.Drawing.Color.White;
             this.pnl_cont.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_cont.Location = new System.Drawing.Point(12, 67);
             this.pnl_cont.Name = "pnl_cont";
-            this.pnl_cont.Size = new System.Drawing.Size(1364, 353);
+            this.pnl_cont.Size = new System.Drawing.Size(1364, 662);
             this.pnl_cont.TabIndex = 2;
             // 
             // pnl_inf
             // 
             this.pnl_inf.BackColor = System.Drawing.Color.Chocolate;
             this.pnl_inf.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_inf.Location = new System.Drawing.Point(0, 420);
+            this.pnl_inf.Location = new System.Drawing.Point(0, 729);
             this.pnl_inf.Name = "pnl_inf";
             this.pnl_inf.Size = new System.Drawing.Size(1386, 10);
             this.pnl_inf.TabIndex = 3;
@@ -223,7 +234,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 57);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(12, 363);
+            this.panel1.Size = new System.Drawing.Size(12, 672);
             this.panel1.TabIndex = 1;
             // 
             // pnl_der
@@ -232,7 +243,7 @@
             this.pnl_der.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnl_der.Location = new System.Drawing.Point(1376, 57);
             this.pnl_der.Name = "pnl_der";
-            this.pnl_der.Size = new System.Drawing.Size(10, 363);
+            this.pnl_der.Size = new System.Drawing.Size(10, 672);
             this.pnl_der.TabIndex = 5;
             // 
             // panel2
@@ -244,23 +255,12 @@
             this.panel2.Size = new System.Drawing.Size(1364, 10);
             this.panel2.TabIndex = 7;
             // 
-            // gENERARREPORTEToolStripMenuItem
-            // 
-            this.gENERARREPORTEToolStripMenuItem.ForeColor = System.Drawing.Color.Chocolate;
-            this.gENERARREPORTEToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.gENERARREPORTEToolStripMenuItem.IconColor = System.Drawing.Color.Black;
-            this.gENERARREPORTEToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.gENERARREPORTEToolStripMenuItem.Name = "gENERARREPORTEToolStripMenuItem";
-            this.gENERARREPORTEToolStripMenuItem.Size = new System.Drawing.Size(161, 53);
-            this.gENERARREPORTEToolStripMenuItem.Text = "GENERAR REPORTE";
-            this.gENERARREPORTEToolStripMenuItem.Click += new System.EventHandler(this.gENERARREPORTEToolStripMenuItem_Click);
-            // 
             // CP_CONTENEDOR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1386, 430);
+            this.ClientSize = new System.Drawing.Size(1386, 739);
             this.Controls.Add(this.pnl_cont);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

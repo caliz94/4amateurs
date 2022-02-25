@@ -127,7 +127,7 @@
             series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             series1.Label = "#VALX";
             series1.LabelAngle = -90;
-            series1.LabelToolTip = "#VALX";
+            series1.LabelToolTip = " #VAL";
             series1.Legend = "Legend1";
             series1.LegendText = "Placas del Mes";
             series1.Name = "Placas del mes";

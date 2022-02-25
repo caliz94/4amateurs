@@ -104,6 +104,7 @@ namespace PRESENTACION
             if (txt_idUsuario.Text == "1")
             {
                 pictureBox1.Image = global::PRESENTACION.Properties.Resources._1;
+
             }
             else if (txt_idUsuario.Text == "2")
             {
@@ -116,9 +117,12 @@ namespace PRESENTACION
 
             else if (txt_idUsuario.Text == "5")
             {
-                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._5;
 
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._5;
             }
+
+
+
             else if (txt_idUsuario.Text == "6")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._6;
@@ -139,10 +143,10 @@ namespace PRESENTACION
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._10;
             }
-            //else if (txt_idUsuario.Text == "11")
-            //{
-            //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._11;
-            //}
+            else if (txt_idUsuario.Text == "11")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._11;
+            }
             //else if (txt_idUsuario.Text == "12")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._12;
@@ -211,10 +215,10 @@ namespace PRESENTACION
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._28;
             }
-            //else if (txt_idUsuario.Text == "29")
-            //{
-            //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._29;
-            //}
+            else if (txt_idUsuario.Text == "29")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._29;
+            }
             else if (txt_idUsuario.Text == "30")
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._30;
@@ -223,10 +227,10 @@ namespace PRESENTACION
             {
                 this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._31;
             }
-            //else if (txt_idUsuario.Text == "32")
-            //{
-            //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._32;
-            //}
+            else if (txt_idUsuario.Text == "32")
+            {
+                this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._32;
+            }
             //else if (txt_idUsuario.Text == "33")
             //{
             //    this.pictureBox1.Image = global::PRESENTACION.Properties.Resources._33;
@@ -255,6 +259,16 @@ namespace PRESENTACION
             {
 
             }
+            //if (txt_idUsuario.Text == "5")
+            //{
+            //    this.pictureBox2.Image = global::PRESENTACION.Properties.Resources.FF_PURPURA;
+            //    this.pictureBox3.Image = global::PRESENTACION.Properties.Resources.LIDER;
+            //}
+            //else
+            //{
+            //    pictureBox3.Image = null;
+            //    pictureBox2.Image = null;
+            //}
         }
         #endregion
 

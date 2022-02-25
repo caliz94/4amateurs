@@ -196,7 +196,7 @@
             this.BTN_GUARDAR.IconChar = FontAwesome.Sharp.IconChar.Save;
             this.BTN_GUARDAR.IconColor = System.Drawing.Color.Green;
             this.BTN_GUARDAR.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BTN_GUARDAR.IconSize = 35;
+            this.BTN_GUARDAR.IconSize = 50;
             this.BTN_GUARDAR.Location = new System.Drawing.Point(252, 289);
             this.BTN_GUARDAR.Name = "BTN_GUARDAR";
             this.BTN_GUARDAR.Size = new System.Drawing.Size(176, 72);
